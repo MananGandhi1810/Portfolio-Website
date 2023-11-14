@@ -72,37 +72,45 @@ class _HomePageState extends State<HomePage> {
                               child: AboutMe(),
                             ),
                           )
-                        : Container(
-                            height: MediaQuery.of(context).size.height * 0.1,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(100),
-                              gradient: const LinearGradient(
-                                colors: [
-                                  Colors.red,
-                                  Colors.blue,
-                                ],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
+                        : ConstrainedBox(
+                            constraints: BoxConstraints(
+                              minHeight:
+                                  MediaQuery.of(context).size.height * 0.05,
                             ),
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.transparent,
-                                foregroundColor: Colors.white,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                gradient: const LinearGradient(
+                                  colors: [
+                                    Colors.red,
+                                    Colors.blue,
+                                  ],
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                ),
                               ),
-                              onPressed: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return const BlurredBackgroundPopup(
-                                      child: AboutMe(
-                                        isPopup: true,
-                                      ),
-                                    );
-                                  },
-                                );
-                              },
-                              child: const Text("About Me"),
+                              child: IconButton(
+                                style: IconButton.styleFrom(
+                                  backgroundColor: Colors.transparent,
+                                  foregroundColor: Colors.white,
+                                ),
+                                onPressed: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (context) {
+                                      return const BlurredBackgroundPopup(
+                                        child: AboutMe(
+                                          isPopup: true,
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                                icon: const Icon(
+                                  Icons.person,
+                                  size: 12,
+                                ),
+                              ),
                             ),
                           ),
                   ),
@@ -139,37 +147,45 @@ class _HomePageState extends State<HomePage> {
                               child: ColorPicker(),
                             ),
                           )
-                        : Container(
-                            height: MediaQuery.of(context).size.height * 0.1,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(100),
-                              gradient: const LinearGradient(
-                                colors: [
-                                  Colors.red,
-                                  Colors.blue,
-                                ],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
+                        : ConstrainedBox(
+                            constraints: BoxConstraints(
+                              minHeight:
+                                  MediaQuery.of(context).size.height * 0.05,
                             ),
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.transparent,
-                                foregroundColor: Colors.white,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                gradient: const LinearGradient(
+                                  colors: [
+                                    Colors.red,
+                                    Colors.blue,
+                                  ],
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                ),
                               ),
-                              onPressed: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return const BlurredBackgroundPopup(
-                                      child: ColorPicker(
-                                        isPopup: true,
-                                      ),
-                                    );
-                                  },
-                                );
-                              },
-                              child: const Text("Change Color"),
+                              child: IconButton(
+                                style: IconButton.styleFrom(
+                                  backgroundColor: Colors.transparent,
+                                  foregroundColor: Colors.white,
+                                ),
+                                onPressed: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (context) {
+                                      return const BlurredBackgroundPopup(
+                                        child: ColorPicker(
+                                          isPopup: true,
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                                icon: const Icon(
+                                  Icons.color_lens,
+                                  size: 12,
+                                ),
+                              ),
                             ),
                           ),
                   ),
