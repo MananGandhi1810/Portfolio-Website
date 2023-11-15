@@ -1,5 +1,5 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AboutMe extends StatelessWidget {
   const AboutMe({
@@ -18,26 +18,38 @@ class AboutMe extends StatelessWidget {
           maxWidth: !isPopup
               ? MediaQuery.of(context).size.width * 0.2
               : MediaQuery.of(context).size.width * 0.5,
+          minHeight: !isPopup
+              ? MediaQuery.of(context).size.height * 0.2
+              : MediaQuery.of(context).size.height * 0.5,
+          minWidth: !isPopup
+              ? MediaQuery.of(context).size.width * 0.2
+              : MediaQuery.of(context).size.width * 0.5,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "Hello World!",
-              style: GoogleFonts.rubik(
+              style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const Text(
-              "I am Manan Gandhi, a Computer Engineering Student who loves to code and build softwares.",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
+            AnimatedTextKit(
+              repeatForever: true,
+              animatedTexts: [
+                FadeAnimatedText(
+                  "I am Manan Gandhi, a Computer Engineering Student who loves to code and build software.",
+                  textStyle: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
+                  duration: const Duration(seconds: 5),
+                ),
+              ],
             ),
           ],
         ),

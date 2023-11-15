@@ -40,6 +40,7 @@ dependencies:
   url_launcher: ^6.2.1
   simple_icons: ^7.10.0
   provider: ^6.1.1
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:
