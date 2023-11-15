@@ -19,7 +19,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   bool isSmallScreen = false;
-  Color color = Colors.blue;
 
   @override
   void initState() {
@@ -118,22 +117,38 @@ class _HomePageState extends State<HomePage> {
                     child: ConstrainedBox(
                       constraints: BoxConstraints(
                         maxWidth: MediaQuery.of(context).size.width * 0.35,
+                        maxHeight: MediaQuery.of(context).size.height * 0.8,
                       ),
                       child: DeviceFrame(
                         isFrameVisible: true,
                         device: Devices.android.onePlus8Pro,
-                        screen: MaterialApp(
-                          title: 'Manan Gandhi',
-                          theme: ThemeData(
-                            colorScheme: ColorScheme.fromSeed(
-                              seedColor: Colors.blue,
-                              brightness: Brightness.dark,
-                            ),
-                            useMaterial3: true,
-                            textTheme: GoogleFonts.rubikTextTheme(),
-                          ),
-                          debugShowCheckedModeBanner: false,
-                          home: const MobileHomePage(),
+                        screen: Builder(
+                          builder: (BuildContext deviceContext) {
+                            return MultiProvider(
+                              providers: [
+                                ChangeNotifierProvider<ColorProvider>(
+                                  create: (deviceContext) => ColorProvider(
+                                    color: context.watch<ColorProvider>().color,
+                                  ),
+                                ),
+                              ],
+                              child: MaterialApp(
+                                title: 'Manan Gandhi',
+                                theme: ThemeData(
+                                  colorScheme: ColorScheme.fromSeed(
+                                    seedColor: context.watch<ColorProvider>().color,
+                                    brightness: Brightness.dark,
+                                  ),
+                                  useMaterial3: true,
+                                  textTheme: GoogleFonts.rubikTextTheme(),
+                                ),
+                                debugShowCheckedModeBanner: false,
+                                home: MobileHomePage(
+                                  color: context.watch<ColorProvider>().color,
+                                ),
+                              ),
+                            );
+                          },
                         ),
                       ),
                     ),

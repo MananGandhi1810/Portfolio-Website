@@ -63,14 +63,14 @@ class _ColorPickerState extends State<ColorPicker> {
               isSelected: context.watch<ColorProvider>().color == Colors.green,
             ),
             ColorPickerCircle(
-              color: Colors.yellow,
+              color: Colors.amber,
               onTap: () {
-                debugPrint("Yellow");
+                debugPrint("amber");
                 setState(() {
-                  context.read<ColorProvider>().setColor(Colors.yellow);
+                  context.read<ColorProvider>().setColor(Colors.amber);
                 });
               },
-              isSelected: context.watch<ColorProvider>().color == Colors.yellow,
+              isSelected: context.watch<ColorProvider>().color == Colors.amber,
             ),
             ColorPickerCircle(
               color: Colors.purple,
@@ -85,7 +85,7 @@ class _ColorPickerState extends State<ColorPicker> {
             ColorPickerCircle(
               color: Colors.brown,
               onTap: () {
-                debugPrint("brown");
+                debugPrint("Brown");
                 setState(() {
                   context.read<ColorProvider>().setColor(Colors.brown);
                 });

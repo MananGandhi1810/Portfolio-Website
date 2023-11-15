@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_website/presentation/mobile_screens/components/icon_card.dart';
 import 'package:portfolio_website/presentation/mobile_screens/projects_page.dart';
 import 'package:portfolio_website/presentation/mobile_screens/skills_page.dart';
+import 'package:provider/provider.dart';
 import 'package:simple_icons/simple_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../providers/color_provider.dart';
 import 'about_page.dart';
 import 'education_page.dart';
 
 class MobileHomePage extends StatefulWidget {
-  const MobileHomePage({super.key});
+  const MobileHomePage({super.key, this.color = Colors.blue});
+
+  final Color color;
 
   @override
   State<MobileHomePage> createState() => _MobileHomePageState();
@@ -18,6 +22,11 @@ class MobileHomePage extends StatefulWidget {
 class _MobileHomePageState extends State<MobileHomePage> {
   @override
   Widget build(BuildContext context) {
+    if (context.watch<ColorProvider>().color != widget.color) {
+      Future.delayed(const Duration(milliseconds: 100), () {
+        context.read<ColorProvider>().setColor(widget.color);
+      });
+    }
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(

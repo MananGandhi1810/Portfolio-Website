@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../../providers/color_provider.dart';
 
 class AboutPage extends StatefulWidget {
   const AboutPage({super.key});
@@ -12,9 +15,21 @@ class _AboutScreenState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: context.watch<ColorProvider>().color.computeLuminance() > 0.5
+              ? Colors.black
+              : Colors.white,
+        ),
         centerTitle: true,
-        title: const Text('About Me'),
-        backgroundColor: Colors.blueAccent,
+        title: Text(
+          'About Me',
+          style: TextStyle(
+            color: context.watch<ColorProvider>().color.computeLuminance() > 0.5
+                ? Colors.black
+                : Colors.white,
+          ),
+        ),
+        backgroundColor: context.watch<ColorProvider>().color,
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -54,12 +69,11 @@ class _AboutScreenState extends State<AboutPage> {
                             : Colors.black,
                       ),
                     ),
-                    const TextSpan(
-                      text:
-                          "17 year old Web and Mobile Development Enthusiast",
+                    TextSpan(
+                      text: "17 year old Web and Mobile Development Enthusiast",
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.blue,
+                        color: context.watch<ColorProvider>().color,
                       ),
                     ),
                     TextSpan(
@@ -71,11 +85,11 @@ class _AboutScreenState extends State<AboutPage> {
                             : Colors.black,
                       ),
                     ),
-                    const TextSpan(
+                    TextSpan(
                       text: "B.Tech in Computer Engineering",
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.blue,
+                        color: context.watch<ColorProvider>().color,
                       ),
                     ),
                     TextSpan(

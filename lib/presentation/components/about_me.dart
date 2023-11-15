@@ -31,7 +31,7 @@ class AboutMe extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Text(
-              "Hello World!",
+              "Hello, World!",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,

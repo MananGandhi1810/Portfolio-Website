@@ -1,8 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:simple_icons/simple_icons.dart';
 
+import '../../providers/color_provider.dart';
 import 'components/divider_with_text.dart';
 import 'components/skills_chip.dart';
 
@@ -212,9 +214,21 @@ class _SkillsPageState extends State<SkillsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: context.watch<ColorProvider>().color.computeLuminance() > 0.5
+              ? Colors.black
+              : Colors.white,
+        ),
         centerTitle: true,
-        title: const Text('Skills'),
-        backgroundColor: Colors.blueAccent,
+        title: Text(
+          'Skills',
+          style: TextStyle(
+            color: context.watch<ColorProvider>().color.computeLuminance() > 0.5
+                ? Colors.black
+                : Colors.white,
+          ),
+        ),
+        backgroundColor: context.watch<ColorProvider>().color,
       ),
       body: SingleChildScrollView(
         child: Center(
