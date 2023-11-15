@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../../../providers/color_provider.dart';
 
 class IconCard extends StatefulWidget {
   const IconCard({
@@ -40,10 +43,16 @@ class _IconCardState extends State<IconCard> {
               ),
               child: CircleAvatar(
                 radius: 35,
+                backgroundColor: context.watch<ColorProvider>().color,
                 child: Center(
                   child: Icon(
                     widget.icon,
                     size: 50,
+                    color:
+                        context.read<ColorProvider>().color.computeLuminance() >
+                                0.5
+                            ? Colors.black
+                            : Colors.white,
                   ),
                 ),
               ),

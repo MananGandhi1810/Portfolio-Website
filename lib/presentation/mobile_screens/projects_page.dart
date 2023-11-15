@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/presentation/mobile_screens/components/project_card.dart';
+import 'package:provider/provider.dart';
+
+import '../../providers/color_provider.dart';
 
 class ProjectsPage extends StatefulWidget {
   const ProjectsPage({super.key});
@@ -13,9 +16,21 @@ class _ProjectsPageState extends State<ProjectsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: context.watch<ColorProvider>().color.computeLuminance() > 0.5
+              ? Colors.black
+              : Colors.white,
+        ),
         centerTitle: true,
-        title: const Text('Projects'),
-        backgroundColor: Colors.blueAccent,
+        title: Text(
+          'Projects',
+          style: TextStyle(
+            color: context.watch<ColorProvider>().color.computeLuminance() > 0.5
+                ? Colors.black
+                : Colors.white,
+          ),
+        ),
+        backgroundColor: context.watch<ColorProvider>().color,
       ),
       body: const SingleChildScrollView(
         child: Column(

@@ -17,7 +17,9 @@ class RootApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (_) => ColorProvider(),
+          create: (_) => ColorProvider(
+            color: Colors.blue,
+          ),
         ),
       ],
       child: MaterialApp(

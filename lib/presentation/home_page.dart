@@ -18,9 +18,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  late AnimationController _controller;
   bool isSmallScreen = false;
-  Color color = Colors.blue;
 
   @override
   void initState() {
@@ -39,7 +37,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void dispose() {
-    _controller.dispose();
     super.dispose();
   }
 
@@ -74,37 +71,45 @@ class _HomePageState extends State<HomePage> {
                               child: AboutMe(),
                             ),
                           )
-                        : Container(
-                            height: MediaQuery.of(context).size.height * 0.1,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(100),
-                              gradient: const LinearGradient(
-                                colors: [
-                                  Colors.red,
-                                  Colors.blue,
-                                ],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
+                        : ConstrainedBox(
+                            constraints: BoxConstraints(
+                              minHeight:
+                                  MediaQuery.of(context).size.height * 0.05,
                             ),
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.transparent,
-                                foregroundColor: Colors.white,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                gradient: const LinearGradient(
+                                  colors: [
+                                    Colors.red,
+                                    Colors.blue,
+                                  ],
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                ),
                               ),
-                              onPressed: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return const BlurredBackgroundPopup(
-                                      child: AboutMe(
-                                        isPopup: true,
-                                      ),
-                                    );
-                                  },
-                                );
-                              },
-                              child: const Text("About Me"),
+                              child: IconButton(
+                                style: IconButton.styleFrom(
+                                  backgroundColor: Colors.transparent,
+                                  foregroundColor: Colors.white,
+                                ),
+                                onPressed: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (context) {
+                                      return const BlurredBackgroundPopup(
+                                        child: AboutMe(
+                                          isPopup: true,
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                                icon: const Icon(
+                                  Icons.person,
+                                  size: 12,
+                                ),
+                              ),
                             ),
                           ),
                   ),
@@ -112,22 +117,38 @@ class _HomePageState extends State<HomePage> {
                     child: ConstrainedBox(
                       constraints: BoxConstraints(
                         maxWidth: MediaQuery.of(context).size.width * 0.35,
+                        maxHeight: MediaQuery.of(context).size.height * 0.8,
                       ),
                       child: DeviceFrame(
                         isFrameVisible: true,
                         device: Devices.android.onePlus8Pro,
-                        screen: MaterialApp(
-                          title: 'Manan Gandhi',
-                          theme: ThemeData(
-                            colorScheme: ColorScheme.fromSeed(
-                              seedColor: Colors.blue,
-                              brightness: Brightness.dark,
-                            ),
-                            useMaterial3: true,
-                            textTheme: GoogleFonts.rubikTextTheme(),
-                          ),
-                          debugShowCheckedModeBanner: false,
-                          home: const MobileHomePage(),
+                        screen: Builder(
+                          builder: (BuildContext deviceContext) {
+                            return MultiProvider(
+                              providers: [
+                                ChangeNotifierProvider<ColorProvider>(
+                                  create: (deviceContext) => ColorProvider(
+                                    color: context.watch<ColorProvider>().color,
+                                  ),
+                                ),
+                              ],
+                              child: MaterialApp(
+                                title: 'Manan Gandhi',
+                                theme: ThemeData(
+                                  colorScheme: ColorScheme.fromSeed(
+                                    seedColor: context.watch<ColorProvider>().color,
+                                    brightness: Brightness.dark,
+                                  ),
+                                  useMaterial3: true,
+                                  textTheme: GoogleFonts.rubikTextTheme(),
+                                ),
+                                debugShowCheckedModeBanner: false,
+                                home: MobileHomePage(
+                                  color: context.watch<ColorProvider>().color,
+                                ),
+                              ),
+                            );
+                          },
                         ),
                       ),
                     ),
@@ -141,37 +162,45 @@ class _HomePageState extends State<HomePage> {
                               child: ColorPicker(),
                             ),
                           )
-                        : Container(
-                            height: MediaQuery.of(context).size.height * 0.1,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(100),
-                              gradient: const LinearGradient(
-                                colors: [
-                                  Colors.red,
-                                  Colors.blue,
-                                ],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
+                        : ConstrainedBox(
+                            constraints: BoxConstraints(
+                              minHeight:
+                                  MediaQuery.of(context).size.height * 0.05,
                             ),
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.transparent,
-                                foregroundColor: Colors.white,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                gradient: const LinearGradient(
+                                  colors: [
+                                    Colors.red,
+                                    Colors.blue,
+                                  ],
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                ),
                               ),
-                              onPressed: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (context) {
-                                    return const BlurredBackgroundPopup(
-                                      child: ColorPicker(
-                                        isPopup: true,
-                                      ),
-                                    );
-                                  },
-                                );
-                              },
-                              child: const Text("Change Color"),
+                              child: IconButton(
+                                style: IconButton.styleFrom(
+                                  backgroundColor: Colors.transparent,
+                                  foregroundColor: Colors.white,
+                                ),
+                                onPressed: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (context) {
+                                      return const BlurredBackgroundPopup(
+                                        child: ColorPicker(
+                                          isPopup: true,
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                                icon: const Icon(
+                                  Icons.color_lens,
+                                  size: 12,
+                                ),
+                              ),
                             ),
                           ),
                   ),
