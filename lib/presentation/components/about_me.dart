@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:provider/provider.dart';
 
-class AboutMe extends StatelessWidget {
+import '../../providers/color_provider.dart';
+
+class AboutMe extends StatefulWidget {
   const AboutMe({
     super.key,
     this.isPopup = false,
@@ -10,19 +13,23 @@ class AboutMe extends StatelessWidget {
   final bool isPopup;
 
   @override
+  State<AboutMe> createState() => _AboutMeState();
+}
+
+class _AboutMeState extends State<AboutMe> {
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ConstrainedBox(
         constraints: BoxConstraints(
-          maxWidth: !isPopup
+          maxWidth: !widget.isPopup
               ? MediaQuery.of(context).size.width * 0.2
               : MediaQuery.of(context).size.width * 0.5,
-
-          minHeight: !isPopup
+          minHeight: !widget.isPopup
               ? MediaQuery.of(context).size.height * 0.2
               : MediaQuery.of(context).size.height * 0.5,
-          minWidth: !isPopup
+          minWidth: !widget.isPopup
               ? MediaQuery.of(context).size.width * 0.2
               : MediaQuery.of(context).size.width * 0.5,
         ),
@@ -31,7 +38,6 @@ class AboutMe extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-
             const Text(
               "Hello, World!",
               style: TextStyle(
@@ -39,20 +45,32 @@ class AboutMe extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            AnimatedTextKit(
-              repeatForever: true,
-              animatedTexts: [
-                FadeAnimatedText(
-                  "I am Manan Gandhi, a Computer Engineering Student who loves to code and build software.",
-                  textStyle: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  textAlign: TextAlign.center,
-                  duration: const Duration(seconds: 5),
+            Animate(
+              autoPlay: true,
+              onComplete: (AnimationController controller) {
+                controller.repeat(
+                  reverse: true,
+                );
+              },
+              effects: [
+                const FadeEffect(
+                  duration: Duration(seconds: 1),
+                ),
+                ShimmerEffect(
+                  duration: const Duration(seconds: 2),
+                  delay: const Duration(seconds: 1),
+                  color: context.watch<ColorProvider>().color,
                 ),
               ],
-            ),
+              child: const Text(
+                "I am Manan Gandhi, a Computer Engineering Student who loves to code and build software.",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            )
           ],
         ),
       ),
