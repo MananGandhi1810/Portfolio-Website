@@ -134,6 +134,19 @@ class _MobileHomePageState extends State<MobileHomePage> {
                         },
                       ),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: IconCard(
+                        title: "Instagram",
+                        icon: SimpleIcons.instagram,
+                        onTap: () {
+                          launchUrl(
+                            Uri.parse("https://www.instagram.com/manan.py"),
+                          );
+                        },
+                      ),
+                    ),
+
                   ],
                 ),
               ),

@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
                   child: ConstrainedBox(
                     constraints: BoxConstraints(
                       maxWidth: MediaQuery.of(context).size.width * 0.5,
-                      maxHeight: MediaQuery.of(context).size.height * 0.8,
+                      maxHeight: MediaQuery.of(context).size.height * 0.95,
                     ),
                     child: DeviceFrame(
                       isFrameVisible: true,
