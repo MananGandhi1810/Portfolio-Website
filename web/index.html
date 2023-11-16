@@ -73,11 +73,11 @@
 </div>
 <script>
     var domain = document.location.origin;
-    var base-href = '/';
+    var basehref = '/';
     if(domain.indexOf('github') !== -1) {
-      base-href = '/Portfolio-Website/';
+      basehref = '/Portfolio-Website/';
     }
-    document.getElementsByTagName('base')[0].href = base-href;
+    document.getElementsByTagName('base')[0].href = basehref;
     window.addEventListener('load', function(ev) {
       var loading = document.querySelector('#loading');
       _flutter.loader.loadEntrypoint({
