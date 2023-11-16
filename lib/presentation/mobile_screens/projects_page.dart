@@ -76,9 +76,12 @@ class _ProjectsPageState extends State<ProjectsPage> {
             ),
             ProjectCard(
               projectName: "ElectricVehicles Website",
-              projectImage: "assets/images/projects/electric_vehicles_website.png",
-              projectDescription: "A website that helps people to make informed decisions on buying electric vehicles.",
-              projectLink: "https://github.com/MananGandhi1810/FooBar-Electric-Vehicle-CyberCypher-Hackathon",
+              projectImage:
+                  "assets/images/projects/electric_vehicles_website.png",
+              projectDescription:
+                  "A website that helps people to make informed decisions on buying electric vehicles.",
+              projectLink:
+                  "https://github.com/MananGandhi1810/FooBar-Electric-Vehicle-CyberCypher-Hackathon",
               projectTechnologies: [
                 "Python",
                 "Flask",

@@ -146,6 +146,10 @@ class _SkillsPageState extends State<SkillsPage> {
           "icon": SimpleIcons.ubuntu,
         },
         {
+          "skillName": "Raspberry Pi",
+          "icon": SimpleIcons.raspberrypi,
+        },
+        {
           "skillName": "Postman",
           "icon": SimpleIcons.postman,
         },
