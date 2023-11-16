@@ -204,10 +204,7 @@ class _SkillsPageState extends State<SkillsPage> {
   @override
   void initState() {
     super.initState();
-    Timer(
-      const Duration(milliseconds: 500),
-      () => initSkills(),
-    );
+    initSkills();
   }
 
   @override

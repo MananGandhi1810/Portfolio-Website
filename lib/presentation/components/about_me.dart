@@ -62,11 +62,14 @@ class _AboutMeState extends State<AboutMe> {
                   color: context.watch<ColorProvider>().color,
                 ),
               ],
-              child: const Text(
+              child: Text(
                 "I am Manan Gandhi, a Computer Engineering Student who loves to code and build software.",
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
+                  color: Theme.of(context).brightness == Brightness.dark
+                      ? Colors.white
+                      : Colors.black,
                 ),
                 textAlign: TextAlign.center,
               ),
