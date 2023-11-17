@@ -1,5 +1,6 @@
 import 'package:device_frame/device_frame.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/presentation/components/about_me.dart';
 import 'package:portfolio_website/presentation/components/blurred_background_popup.dart';
