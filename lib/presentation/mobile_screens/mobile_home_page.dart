@@ -168,7 +168,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                                   fontSize: 20,
                                 ),
                               ),
-                              backgroundColor: context.read<ColorProvider>().color,
+                              backgroundColor:
+                                  context.read<ColorProvider>().color,
                             ),
                           );
                         },
@@ -179,82 +180,46 @@ class _MobileHomePageState extends State<MobileHomePage> {
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 0, 0, 12),
-                child: Column(
-                  children: [
-                    RichText(
+                child: MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () {
+                      launchUrl(
+                        Uri.parse(
+                            "https://github.com/MananGandhi1810/Portfolio-Website"),
+                      );
+                    },
+                    child: RichText(
                       text: const TextSpan(
                         children: [
                           TextSpan(
-                            text: "Built by ",
+                            text: "Developed by ",
                             style: TextStyle(
                               fontSize: 20,
                               color: Colors.white,
                             ),
                           ),
                           TextSpan(
-                            text: "Manan Gandhi",
+                            text: "Manan Gandhi ",
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
                           ),
-                          TextSpan(
-                            text: " using ",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.white,
-                            ),
-                          ),
-                          TextSpan(
-                            text: "Flutter",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                          WidgetSpan(
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                              child: Icon(
+                                Icons.open_in_new,
+                                size: 20,
+                              ),
                             ),
                           ),
                         ],
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.all(6),
-                    ),
-                    MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: GestureDetector(
-                        onTap: () {
-                          launchUrl(
-                            Uri.parse("https://pawan.app"),
-                          );
-                        },
-                        child: RichText(
-                          text: const TextSpan(
-                            children: [
-                              TextSpan(
-                                text: "Inspired by ",
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              TextSpan(
-                                text: "Pawan Kumar's Website",
-                                style: TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(4),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
