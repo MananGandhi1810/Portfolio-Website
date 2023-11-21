@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_icons/simple_icons.dart';
@@ -160,6 +158,10 @@ class _SkillsPageState extends State<SkillsPage> {
         {
           "skillName": "GitHub",
           "icon": SimpleIcons.github,
+        },
+        {
+          "skillName": "GitHub Actions",
+          "icon": SimpleIcons.githubactions,
         },
         {
           "skillName": "MongoDB",

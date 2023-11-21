@@ -146,6 +146,34 @@ class _MobileHomePageState extends State<MobileHomePage> {
                         },
                       ),
                     ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: IconCard(
+                        title: "Blog",
+                        icon: Icons.article,
+                        onTap: () {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                "Coming Soon!",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: context
+                                              .read<ColorProvider>()
+                                              .color
+                                              .computeLuminance() >
+                                          0.5
+                                      ? Colors.black
+                                      : Colors.white,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              backgroundColor: context.read<ColorProvider>().color,
+                            ),
+                          );
+                        },
+                      ),
+                    ),
                   ],
                 ),
               ),
