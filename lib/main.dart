@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_website/presentation/mobile_screens/mobile_home_page.dart';
 import 'package:provider/provider.dart';
 
 import 'presentation/home_page.dart';
@@ -32,7 +33,11 @@ class RootApp extends StatelessWidget {
           textTheme: GoogleFonts.rubikTextTheme(),
         ),
         debugShowCheckedModeBanner: false,
-        home: const HomePage(),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const HomePage(),
+          '/mobile': (context) => const MobileHomePage(),
+        },
       ),
     );
   }

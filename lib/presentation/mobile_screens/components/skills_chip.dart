@@ -25,7 +25,9 @@ class _SkillsChipState extends State<SkillsChip> {
       ),
       avatar: Icon(
         widget.icon,
-        color: Colors.white,
+        color: Theme.of(context).brightness == Brightness.dark
+            ? Colors.white
+            : Colors.black,
       ),
     );
   }
