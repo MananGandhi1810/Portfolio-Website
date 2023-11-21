@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/presentation/components/about_me.dart';
 import 'package:portfolio_website/presentation/components/blurred_background_popup.dart';
 import 'package:provider/provider.dart';
+import 'package:starsview/config/MeteoriteConfig.dart';
 import 'package:starsview/config/StarsConfig.dart';
 import 'package:starsview/starsview.dart';
 
@@ -63,7 +64,7 @@ class _HomePageState extends State<HomePage> {
           const StarsView(
             fps: 60,
             starsConfig: StarsConfig(
-              starCount: 100,
+              starCount: 250,
               maxStarSize: 5,
             ),
           ),

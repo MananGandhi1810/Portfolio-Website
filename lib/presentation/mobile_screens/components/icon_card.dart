@@ -40,7 +40,8 @@ class _IconCardState extends State<IconCard> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
+              AnimatedContainer(
+                duration: const Duration(seconds: 1),
                 decoration: const BoxDecoration(
                   boxShadow: [
                     BoxShadow(
