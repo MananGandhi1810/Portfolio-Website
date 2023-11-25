@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
+import 'package:shimmer/shimmer.dart';
 
 import '../../providers/color_provider.dart';
 
@@ -45,23 +45,12 @@ class _AboutMeState extends State<AboutMe> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Animate(
-              autoPlay: true,
-              onComplete: (AnimationController controller) {
-                controller.repeat(
-                  reverse: true,
-                );
-              },
-              effects: [
-                const FadeEffect(
-                  duration: Duration(seconds: 1),
-                ),
-                ShimmerEffect(
-                  duration: const Duration(seconds: 2),
-                  delay: const Duration(seconds: 1),
-                  color: context.watch<ColorProvider>().color,
-                ),
-              ],
+            Shimmer.fromColors(
+              baseColor: Theme.of(context).brightness == Brightness.dark
+                  ? Colors.white
+                  : Colors.black,
+              highlightColor: context.watch<ColorProvider>().color,
+              period: const Duration(milliseconds: 1500),
               child: Text(
                 "I am Manan Gandhi, a Computer Engineering Student who loves to code and build software.",
                 style: TextStyle(

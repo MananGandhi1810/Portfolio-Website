@@ -4,14 +4,9 @@ import 'package:provider/provider.dart';
 
 import '../../providers/color_provider.dart';
 
-class ProjectsPage extends StatefulWidget {
+class ProjectsPage extends StatelessWidget {
   const ProjectsPage({super.key});
 
-  @override
-  State<ProjectsPage> createState() => _ProjectsPageState();
-}
-
-class _ProjectsPageState extends State<ProjectsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

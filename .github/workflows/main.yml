@@ -30,7 +30,7 @@ jobs:
         run: flutter pub get
 
       - name: Start Web Release Build
-        run: flutter build web --release --web-renderer canvaskit 
+        run: flutter build web --release
      
       - name: Upload Web Build Files
         uses: actions/upload-artifact@v2
