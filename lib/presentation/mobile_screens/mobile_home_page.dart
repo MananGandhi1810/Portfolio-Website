@@ -225,13 +225,19 @@ class _MobileHomePageState extends State<MobileHomePage>
                       );
                     },
                     child: RichText(
-                      text: const TextSpan(
+                      text: TextSpan(
                         children: [
                           TextSpan(
                             text: "Developed by ",
                             style: TextStyle(
                               fontSize: 20,
-                              color: Colors.white,
+                              color: context
+                                          .read<ColorProvider>()
+                                          .color
+                                          .computeLuminance() >
+                                      0.5
+                                  ? Colors.black
+                                  : Colors.white,
                             ),
                           ),
                           TextSpan(
@@ -239,15 +245,28 @@ class _MobileHomePageState extends State<MobileHomePage>
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: context
+                                          .read<ColorProvider>()
+                                          .color
+                                          .computeLuminance() >
+                                      0.5
+                                  ? Colors.black
+                                  : Colors.white,
                             ),
                           ),
                           WidgetSpan(
                             child: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                               child: Icon(
                                 Icons.open_in_new,
                                 size: 20,
+                                color: context
+                                            .read<ColorProvider>()
+                                            .color
+                                            .computeLuminance() >
+                                        0.5
+                                    ? Colors.black
+                                    : Colors.white,
                               ),
                             ),
                           ),

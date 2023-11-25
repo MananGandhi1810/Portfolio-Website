@@ -63,9 +63,10 @@ class _IconCardState extends State<IconCard> {
               widget.title,
               style: TextStyle(
                 fontSize: 20,
-                color: Theme.of(context).brightness == Brightness.dark
-                    ? Colors.white
-                    : Colors.black,
+                color:
+                    context.read<ColorProvider>().color.computeLuminance() > 0.5
+                        ? Colors.black
+                        : Colors.white,
               ),
             ),
           ],
