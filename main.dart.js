@@ -70841,7 +70841,7 @@ A.aaw.prototype={
 $0(){A.oi(A.eO("mailto:ardumanan@gmail.com",0,null))},
 $S:0}
 A.aax.prototype={
-$0(){A.oi(A.eO("https://www.instagram.com/manan.py",0,null))},
+$0(){A.oi(A.eO("https://www.instagram.com/manangandhi.tech/",0,null))},
 $S:0}
 A.aay.prototype={
 $0(){var s,r,q=null,p=this.a,o=p.ad(t.Pu)
