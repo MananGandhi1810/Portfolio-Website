@@ -141,7 +141,7 @@ class _MobileHomePageState extends State<MobileHomePage> {
                         icon: SimpleIcons.instagram,
                         onTap: () {
                           launchUrl(
-                            Uri.parse("https://www.instagram.com/manan.py"),
+                            Uri.parse("https://www.instagram.com/manangandhi.tech/"),
                           );
                         },
                       ),
