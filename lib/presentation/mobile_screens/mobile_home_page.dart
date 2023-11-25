@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/presentation/mobile_screens/components/icon_card.dart';
 import 'package:portfolio_website/presentation/mobile_screens/projects_page.dart';
@@ -19,7 +21,32 @@ class MobileHomePage extends StatefulWidget {
   State<MobileHomePage> createState() => _MobileHomePageState();
 }
 
-class _MobileHomePageState extends State<MobileHomePage> {
+class _MobileHomePageState extends State<MobileHomePage>
+    with SingleTickerProviderStateMixin {
+  AnimationController? _animationController;
+  Tween<double>? _tween;
+
+  @override
+  void initState() {
+    _animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 10),
+    );
+    _tween = Tween<double>(begin: 0, end: 1);
+    _tween!.animate(_animationController!).addListener(() {
+      debugPrint(
+          "${((sin(2 * pi * _tween!.evaluate(_animationController!)) / 2).abs() % 0.5) + 0.5}");
+      setState(() {});
+    });
+    _animationController!.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        _animationController!.forward(from: 0);
+      }
+    });
+    _animationController!.forward();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     if (context.watch<ColorProvider>().color != widget.color) {
@@ -29,14 +56,21 @@ class _MobileHomePageState extends State<MobileHomePage> {
     }
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.red,
-              Colors.blue,
+              context.watch<ColorProvider>().color.withOpacity(0.75),
+              context.watch<ColorProvider>().color.withOpacity(
+                    ((sin(2 * pi * _tween!.evaluate(_animationController!)) / 2)
+                                .abs() %
+                            0.5) +
+                        0.5,
+                  ),
+              context.watch<ColorProvider>().color.withOpacity(0.75),
             ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            transform: GradientRotation(
+              2 * pi * _tween!.evaluate(_animationController!),
+            ),
           ),
         ),
         child: Padding(
@@ -141,7 +175,8 @@ class _MobileHomePageState extends State<MobileHomePage> {
                         icon: SimpleIcons.instagram,
                         onTap: () {
                           launchUrl(
-                            Uri.parse("https://www.instagram.com/manangandhi.tech/"),
+                            Uri.parse(
+                                "https://www.instagram.com/manangandhi.tech/"),
                           );
                         },
                       ),
