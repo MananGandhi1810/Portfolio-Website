@@ -34,8 +34,6 @@ class _MobileHomePageState extends State<MobileHomePage>
     );
     _tween = Tween<double>(begin: 0, end: 1);
     _tween!.animate(_animationController!).addListener(() {
-      debugPrint(
-          "${((sin(2 * pi * _tween!.evaluate(_animationController!)) / 2).abs() % 0.5) + 0.5}");
       setState(() {});
     });
     _animationController!.addStatusListener((status) {
@@ -59,14 +57,24 @@ class _MobileHomePageState extends State<MobileHomePage>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              context.watch<ColorProvider>().color.withOpacity(0.75),
+              context.watch<ColorProvider>().color.withOpacity(
+                    ((sin(2 * pi * _tween!.evaluate(_animationController!)) / 2)
+                                .abs() %
+                            0.5) +
+                        0.25,
+                  ),
               context.watch<ColorProvider>().color.withOpacity(
                     ((sin(2 * pi * _tween!.evaluate(_animationController!)) / 2)
                                 .abs() %
                             0.5) +
                         0.5,
                   ),
-              context.watch<ColorProvider>().color.withOpacity(0.75),
+              context.watch<ColorProvider>().color.withOpacity(
+                    ((sin(2 * pi * _tween!.evaluate(_animationController!)) / 2)
+                                .abs() %
+                            0.5) +
+                        0.25,
+                  ),
             ],
             transform: GradientRotation(
               2 * pi * _tween!.evaluate(_animationController!),

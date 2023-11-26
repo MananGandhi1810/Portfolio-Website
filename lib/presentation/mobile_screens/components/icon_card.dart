@@ -64,7 +64,8 @@ class _IconCardState extends State<IconCard> {
               style: TextStyle(
                 fontSize: 20,
                 color:
-                    context.read<ColorProvider>().color.computeLuminance() > 0.5
+                    context.read<ColorProvider>().color.computeLuminance() >
+                            0.5
                         ? Colors.black
                         : Colors.white,
               ),

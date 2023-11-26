@@ -50,7 +50,7 @@ class _AboutMeState extends State<AboutMe> {
                   ? Colors.white
                   : Colors.black,
               highlightColor: context.watch<ColorProvider>().color,
-              period: const Duration(milliseconds: 1500),
+              period: const Duration(milliseconds: 2500),
               child: Text(
                 "I am Manan Gandhi, a Computer Engineering Student who loves to code and build software.",
                 style: TextStyle(
