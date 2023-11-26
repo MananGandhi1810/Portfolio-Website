@@ -195,25 +195,9 @@ class _MobileHomePageState extends State<MobileHomePage>
                         title: "Blog",
                         icon: Icons.article,
                         onTap: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text(
-                                "Coming Soon!",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: context
-                                              .read<ColorProvider>()
-                                              .color
-                                              .computeLuminance() >
-                                          0.5
-                                      ? Colors.black
-                                      : Colors.white,
-                                  fontSize: 20,
-                                ),
-                              ),
-                              backgroundColor:
-                                  context.read<ColorProvider>().color,
-                            ),
+                          launchUrl(
+                            Uri.parse(
+                                "https://blog.manangandhi.tech/"),
                           );
                         },
                       ),
