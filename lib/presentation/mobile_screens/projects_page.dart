@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_website/presentation/mobile_screens/components/project_card.dart';
 import 'package:provider/provider.dart';
 
 import '../../providers/color_provider.dart';
+import 'components/project_card.dart';
 
 class ProjectsPage extends StatelessWidget {
   const ProjectsPage({super.key});

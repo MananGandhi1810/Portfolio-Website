@@ -1,16 +1,17 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:portfolio_website/presentation/mobile_screens/components/icon_card.dart';
-import 'package:portfolio_website/presentation/mobile_screens/projects_page.dart';
-import 'package:portfolio_website/presentation/mobile_screens/skills_page.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_icons/simple_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../providers/color_provider.dart';
 import 'about_page.dart';
+import 'components/app_icon_card.dart';
+import 'components/link_icon_card.dart';
 import 'education_page.dart';
+import 'projects_page.dart';
+import 'skills_page.dart';
 
 class MobileHomePage extends StatefulWidget {
   const MobileHomePage({super.key, this.color = Colors.blue});
@@ -92,69 +93,41 @@ class _MobileHomePageState extends State<MobileHomePage>
                     childAspectRatio: 0.75,
                   ),
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: IconCard(
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: AppIconCard(
                         title: "About",
                         icon: Icons.person,
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const AboutPage(),
-                            ),
-                          );
-                        },
+                        onTap: AboutPage(),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: IconCard(
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: AppIconCard(
                         title: "Projects",
                         icon: Icons.code,
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const ProjectsPage(),
-                            ),
-                          );
-                        },
+                        onTap: ProjectsPage(),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: IconCard(
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: AppIconCard(
                         title: "Skills",
                         icon: Icons.star,
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const SkillsPage(),
-                            ),
-                          );
-                        },
+                        onTap: SkillsPage(),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: IconCard(
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: AppIconCard(
                         title: "Education",
                         icon: Icons.school,
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const EducationPage(),
-                            ),
-                          );
-                        },
+                        onTap: EducationPage(),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: IconCard(
+                      child: LinkIconCard(
                         title: "Github",
                         icon: SimpleIcons.github,
                         onTap: () {
@@ -166,7 +139,7 @@ class _MobileHomePageState extends State<MobileHomePage>
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: IconCard(
+                      child: LinkIconCard(
                         title: "Email",
                         icon: Icons.mail,
                         onTap: () {
@@ -178,7 +151,7 @@ class _MobileHomePageState extends State<MobileHomePage>
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: IconCard(
+                      child: LinkIconCard(
                         title: "Instagram",
                         icon: SimpleIcons.instagram,
                         onTap: () {
@@ -191,13 +164,12 @@ class _MobileHomePageState extends State<MobileHomePage>
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: IconCard(
+                      child: LinkIconCard(
                         title: "Blog",
                         icon: Icons.article,
                         onTap: () {
                           launchUrl(
-                            Uri.parse(
-                                "https://blog.manangandhi.tech/"),
+                            Uri.parse("https://blog.manangandhi.tech/"),
                           );
                         },
                       ),

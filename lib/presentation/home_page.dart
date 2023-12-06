@@ -1,14 +1,14 @@
 import 'package:device_frame/device_frame.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_website/presentation/components/about_me.dart';
-import 'package:portfolio_website/presentation/components/blurred_background_popup.dart';
 import 'package:provider/provider.dart';
 import 'package:starsview/config/StarsConfig.dart';
 import 'package:starsview/starsview.dart';
 
 import '../providers/color_provider.dart';
+import 'components/about_me.dart';
 import 'components/blurred_background_container.dart';
+import 'components/blurred_background_popup.dart';
 import 'components/color_picker.dart';
 import 'mobile_screens/mobile_home_page.dart';
 

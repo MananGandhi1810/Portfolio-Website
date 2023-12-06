@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 
 import '../../../providers/color_provider.dart';
 
-class IconCard extends StatefulWidget {
-  const IconCard({
+class LinkIconCard extends StatefulWidget {
+  const LinkIconCard({
     super.key,
     required this.title,
     required this.icon,
@@ -16,10 +16,10 @@ class IconCard extends StatefulWidget {
   final IconData icon;
 
   @override
-  State<IconCard> createState() => _IconCardState();
+  State<LinkIconCard> createState() => _LinkIconCardState();
 }
 
-class _IconCardState extends State<IconCard> {
+class _LinkIconCardState extends State<LinkIconCard> {
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
