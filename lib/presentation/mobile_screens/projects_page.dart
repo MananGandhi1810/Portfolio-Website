@@ -45,6 +45,16 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
+              projectName: "Conversify",
+              projectImage: "assets/images/projects/conversify_app.png",
+              projectDescription: "An app to help people discover other people to build exciting projects (built during a 24 hour hackathon).",
+              projectLink: "https://github.com/SiddhPurohit/Verbal_Virtuosos",
+              projectTechnologies: [
+                "Flutter",
+                "Firebase",
+              ],
+            ),
+            ProjectCard(
               projectName: 'Save Birds',
               projectImage: 'assets/images/projects/save_birds_app.png',
               projectDescription:
