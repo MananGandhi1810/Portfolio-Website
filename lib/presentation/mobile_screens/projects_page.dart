@@ -47,11 +47,24 @@ class ProjectsPage extends StatelessWidget {
             ProjectCard(
               projectName: "Conversify",
               projectImage: "assets/images/projects/conversify_app.png",
-              projectDescription: "An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon).",
-              projectLink: "https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",
+              projectDescription:
+                  "An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon).",
+              projectLink:
+                  "https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",
               projectTechnologies: [
                 "Flutter",
                 "Firebase",
+              ],
+            ),
+            ProjectCard(
+              projectName: 'MPSTME OnTrack',
+              projectImage: 'assets/images/projects/mpstme_ontrack_app.png',
+              projectDescription:
+                  'MPSTME OnTrack is built with an aim of never letting anyone from MPSTME get late to a lecture searching for their class. MPSTME OnTrack allows a user to store their schedule with their class details.',
+              projectLink:
+                  'https://appdev-gdsc-mpstme.github.io/MPSTME_OnTrack/',
+              projectTechnologies: [
+                'Flutter',
               ],
             ),
             ProjectCard(

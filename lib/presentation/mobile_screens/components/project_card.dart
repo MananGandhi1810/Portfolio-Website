@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends StatefulWidget {
@@ -64,6 +65,7 @@ class _ProjectCardState extends State<ProjectCard> {
                                         Brightness.dark
                                     ? Colors.white
                                     : Colors.black,
+                                fontFamily: GoogleFonts.rubik().fontFamily,
                               ),
                             ),
                           ],
