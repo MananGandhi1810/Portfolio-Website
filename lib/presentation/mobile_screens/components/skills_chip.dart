@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../../../providers/color_provider.dart';
 
 class SkillsChip extends StatefulWidget {
   const SkillsChip({super.key, required this.skillName, required this.icon});
@@ -14,6 +17,10 @@ class _SkillsChipState extends State<SkillsChip> {
   @override
   Widget build(BuildContext context) {
     return Chip(
+      side: BorderSide(
+        color: Provider.of<ColorProvider>(context).color.withOpacity(0.5),
+        width: 1,
+      ),
       label: Text(
         widget.skillName,
         style: TextStyle(

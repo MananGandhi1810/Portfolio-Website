@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../../providers/color_provider.dart';
 
 class ProjectCard extends StatefulWidget {
   const ProjectCard({
@@ -56,19 +59,15 @@ class _ProjectCardState extends State<ProjectCard> {
                     children: [
                       RichText(
                         text: TextSpan(
-                          children: [
-                            TextSpan(
-                              text: widget.projectDescription,
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: Theme.of(context).brightness ==
-                                        Brightness.dark
-                                    ? Colors.white
-                                    : Colors.black,
-                                fontFamily: GoogleFonts.rubik().fontFamily,
-                              ),
-                            ),
-                          ],
+                          text: widget.projectDescription,
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Theme.of(context).brightness ==
+                                    Brightness.dark
+                                ? Colors.white
+                                : Colors.black,
+                            fontFamily: GoogleFonts.rubik().fontFamily,
+                          ),
                         ),
                       ),
                       const Padding(
@@ -82,6 +81,10 @@ class _ProjectCardState extends State<ProjectCard> {
                             Padding(
                               padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
                               child: Chip(
+                                side: BorderSide(
+                                  color: Provider.of<ColorProvider>(context).color.withOpacity(0.5),
+                                  width: 1,
+                                ),
                                 label: Text(
                                   technology,
                                   style: TextStyle(

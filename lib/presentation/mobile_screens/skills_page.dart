@@ -270,9 +270,6 @@ class _SkillsPageState extends State<SkillsPage> {
                     icon: tools[i]["icon"],
                   ),
                 ),
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-              ),
             ],
           ),
         ),
