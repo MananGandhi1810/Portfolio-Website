@@ -80,6 +80,23 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
+              projectName: 'DockerSensei',
+              projectImage: 'assets/images/projects/docker_sensei_app.jpeg',
+              projectDescription:
+                  'A docker container management system, which helps in managing and monitoring the docker containers running on multiple server. Built during a HackNiche, a 24 hour hackathon held at DJSCE.',
+              projectLink: 'https://github.com/MananGandhi1810/hackniche-2024',
+              projectTechnologies: [
+                'Node.js',
+                'Flutter',
+                'Docker',
+                'Pusher',
+                'Next.js',
+                'Express.js',
+                'PostgreSQL',
+                'Google Cloud Platform',
+              ],
+            ),
+            ProjectCard(
               projectName: 'Stock Market Game',
               projectImage: 'assets/images/projects/stock_market_app.png',
               projectDescription:
