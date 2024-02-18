@@ -158,6 +158,10 @@ class _SkillsPageState extends State<SkillsPage> {
       "icon": SimpleIcons.github,
     },
     {
+      "skillName": "Docker",
+      "icon": SimpleIcons.docker,
+    },
+    {
       "skillName": "GitHub Actions",
       "icon": SimpleIcons.githubactions,
     },
@@ -227,50 +231,53 @@ class _SkillsPageState extends State<SkillsPage> {
         ),
         backgroundColor: context.watch<ColorProvider>().color,
       ),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Wrap(
-            alignment: WrapAlignment.center,
-            direction: Axis.horizontal,
-            spacing: 10,
-            children: [
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: DividerWithText(text: "Languages"),
-              ),
-              for (int i = 0; i < languages.length; i++)
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
-                  child: SkillsChip(
-                    skillName: languages[i]["skillName"],
-                    icon: languages[i]["icon"],
-                  ),
+      body: Padding(
+        padding: const EdgeInsets.only(bottom: 8.0, left: 4.0, right: 4.0),
+        child: SingleChildScrollView(
+          child: Center(
+            child: Wrap(
+              alignment: WrapAlignment.center,
+              direction: Axis.horizontal,
+              spacing: 10,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: DividerWithText(text: "Languages"),
                 ),
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: DividerWithText(text: "Libraries/Frameworks"),
-              ),
-              for (int i = 0; i < librariesAndFrameworks.length; i++)
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
-                  child: SkillsChip(
-                    skillName: librariesAndFrameworks[i]["skillName"],
-                    icon: librariesAndFrameworks[i]["icon"],
+                for (int i = 0; i < languages.length; i++)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
+                    child: SkillsChip(
+                      skillName: languages[i]["skillName"],
+                      icon: languages[i]["icon"],
+                    ),
                   ),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: DividerWithText(text: "Libraries/Frameworks"),
                 ),
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: DividerWithText(text: "Tools"),
-              ),
-              for (int i = 0; i < tools.length; i++)
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
-                  child: SkillsChip(
-                    skillName: tools[i]["skillName"],
-                    icon: tools[i]["icon"],
+                for (int i = 0; i < librariesAndFrameworks.length; i++)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
+                    child: SkillsChip(
+                      skillName: librariesAndFrameworks[i]["skillName"],
+                      icon: librariesAndFrameworks[i]["icon"],
+                    ),
                   ),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: DividerWithText(text: "Tools"),
                 ),
-            ],
+                for (int i = 0; i < tools.length; i++)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
+                    child: SkillsChip(
+                      skillName: tools[i]["skillName"],
+                      icon: tools[i]["icon"],
+                    ),
+                  ),
+              ],
+            ),
           ),
         ),
       ),
