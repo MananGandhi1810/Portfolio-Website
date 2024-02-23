@@ -114,6 +114,10 @@ class _SkillsPageState extends State<SkillsPage> {
       "skillName": "TailwindCSS",
       "icon": SimpleIcons.tailwindcss,
     },
+    {
+      "skillName": "Prisma ORM",
+      "icon": SimpleIcons.prisma,
+    },
   ];
 
   List<Map<String, dynamic>> tools = [
@@ -172,6 +176,10 @@ class _SkillsPageState extends State<SkillsPage> {
     {
       "skillName": "MongoDB",
       "icon": SimpleIcons.mongodb,
+    },
+    {
+      "skillName": "PostgreSQL",
+      "icon": SimpleIcons.postgresql,
     },
     {
       "skillName": "Google Colab",
