@@ -147,7 +147,7 @@ class _HomePageState extends State<HomePage> {
                                 brightness: Brightness.dark,
                               ),
                               useMaterial3: true,
-                              textTheme: GoogleFonts.interTextTheme(),
+                              textTheme: GoogleFonts.rubikTextTheme(),
                             ),
                             debugShowCheckedModeBanner: false,
                             home: MobileHomePage(
