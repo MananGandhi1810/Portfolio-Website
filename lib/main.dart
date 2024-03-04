@@ -32,7 +32,7 @@ class RootApp extends StatelessWidget {
             seedColor: Colors.blue,
           ),
           useMaterial3: true,
-          textTheme: GoogleFonts.rubikTextTheme(),
+          textTheme: GoogleFonts.interTextTheme(),
         ),
         debugShowCheckedModeBanner: false,
         initialRoute: '/',
