@@ -119,7 +119,7 @@ class _ContactFormPageState extends State<ContactFormPage> {
                 padding: EdgeInsets.all(8.0),
               ),
               ElevatedButton(
-                onPressed: () {
+                onPressed: () async {
                   if (_formKey.currentState!.validate()) {
                     debugPrint('Name: ${_nameController.text}');
                     debugPrint('Email: ${_emailController.text}');
@@ -131,7 +131,20 @@ class _ContactFormPageState extends State<ContactFormPage> {
                       'subject': _subjectController.text,
                       'message': _messageController.text,
                     };
-                    DioService().post('https://formspree.io/f/xjvnopwd', data);
+                    final res = await DioService().post('https://formspree.io/f/xjvnopwd', data);
+                    if (res.statusCode == 200) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Message sent successfully'),
+                        ),
+                      );
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Message failed to send'),
+                        ),
+                      );
+                    }
                   }
                 },
                 style: ButtonStyle(
