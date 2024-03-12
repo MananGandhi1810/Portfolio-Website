@@ -63,7 +63,7 @@ class _ContactFormPageState extends State<ContactFormPage> {
                 },
               ),
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(6.0),
               ),
               TextFormField(
                 controller: _emailController,
@@ -89,7 +89,7 @@ class _ContactFormPageState extends State<ContactFormPage> {
                 },
               ),
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(6.0),
               ),
               TextFormField(
                 controller: _subjectController,
@@ -110,7 +110,7 @@ class _ContactFormPageState extends State<ContactFormPage> {
                 },
               ),
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(6.0),
               ),
               TextFormField(
                 controller: _messageController,
@@ -132,7 +132,7 @@ class _ContactFormPageState extends State<ContactFormPage> {
                 maxLines: 5,
               ),
               const Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(6.0),
               ),
               ElevatedButton(
                 onPressed: () async {
