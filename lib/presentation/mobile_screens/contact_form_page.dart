@@ -20,7 +20,21 @@ class _ContactFormPageState extends State<ContactFormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Contact Me"),
+        iconTheme: IconThemeData(
+          color: context.watch<ColorProvider>().color.computeLuminance() > 0.5
+              ? Colors.black
+              : Colors.white,
+        ),
+        centerTitle: true,
+        title: Text(
+          'Contact Me',
+          style: TextStyle(
+            color: context.watch<ColorProvider>().color.computeLuminance() > 0.5
+                ? Colors.black
+                : Colors.white,
+          ),
+        ),
+        backgroundColor: context.watch<ColorProvider>().color,
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

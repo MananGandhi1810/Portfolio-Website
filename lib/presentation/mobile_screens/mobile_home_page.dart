@@ -1,12 +1,12 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:portfolio_website/presentation/mobile_screens/components/contact_form_page.dart';
 import 'package:provider/provider.dart';
 import 'package:simple_icons/simple_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../providers/color_provider.dart';
+import 'contact_form_page.dart';
 import 'about_page.dart';
 import 'components/app_icon_card.dart';
 import 'components/link_icon_card.dart';
@@ -126,6 +126,14 @@ class _MobileHomePageState extends State<MobileHomePage>
                         onTap: EducationPage(),
                       ),
                     ),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: AppIconCard(
+                        title: "Contact",
+                        icon: Icons.message,
+                        onTap: ContactFormPage(),
+                      ),
+                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: LinkIconCard(
@@ -173,14 +181,6 @@ class _MobileHomePageState extends State<MobileHomePage>
                             Uri.parse("https://blog.manangandhi.tech/"),
                           );
                         },
-                      ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: AppIconCard(
-                        title: "Contact",
-                        icon: Icons.message,
-                        onTap: ContactFormPage(),
                       ),
                     ),
                   ],
