@@ -36,9 +36,9 @@ const RESOURCES = {"assets/assets/images/projects/stock_market_app.png": "542a55
 "favicon.png": "05b5e54014d519fbfb11c95f73fedace",
 "flutter.js": "7d69e653079438abfbb24b82a655b0a4",
 "manifest.json": "2be8453ed1b0cd59463054ff5b456a14",
-"index.html": "788855201065fa969d8b04709f6f83d8",
-"/": "788855201065fa969d8b04709f6f83d8",
-"main.dart.js": "05b3589f29f9503601adfe1f40c8d5aa",
+"index.html": "e46fed14717f5d5d71b91b1132cce4ea",
+"/": "e46fed14717f5d5d71b91b1132cce4ea",
+"main.dart.js": "dc1a0cbfc41787e601e7084314940dac",
 "loader_animation.json": "8434a0eb845f1da079aa97b03416500d"};
 // The application shell files that are downloaded before a service worker can
 // start.
