@@ -182,6 +182,10 @@ class _SkillsPageState extends State<SkillsPage> {
       "icon": SimpleIcons.postgresql,
     },
     {
+      "skillName": "Redis",
+      "icon": SimpleIcons.redis,
+    },
+    {
       "skillName": "Google Colab",
       "icon": SimpleIcons.googlecolab,
     },
