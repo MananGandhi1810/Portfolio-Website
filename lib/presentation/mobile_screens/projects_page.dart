@@ -80,6 +80,21 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
+              projectName: 'BrainyBox',
+              projectImage: 'assets/images/projects/brainybox_app.png',
+              projectDescription:
+                  'An edutainment platform, which helps students learn new concepts in a fun and interactive way. 1st runner up at IET Hack n Code, held at MPSTME, Mumbai.',
+              projectLink:
+                  'https://github.com/MananGandhi1810/BinaryBandits-HnC-2024',
+              projectTechnologies: [
+                'Express.js',
+                'Flutter',
+                'Docker',
+                'Firebase',
+                'Google Maps API',
+              ],
+            ),
+            ProjectCard(
               projectName: 'DockerSensei',
               projectImage: 'assets/images/projects/docker_sensei_app.jpeg',
               projectDescription:
