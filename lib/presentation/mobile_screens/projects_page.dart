@@ -45,18 +45,6 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
-              projectName: "Conversify",
-              projectImage: "assets/images/projects/conversify_app.png",
-              projectDescription:
-                  "An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon).",
-              projectLink:
-                  "https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",
-              projectTechnologies: [
-                "Flutter",
-                "Firebase",
-              ],
-            ),
-            ProjectCard(
               projectName: 'MPSTME OnTrack',
               projectImage: 'assets/images/projects/mpstme_ontrack_app.png',
               projectDescription:
@@ -92,6 +80,18 @@ class ProjectsPage extends StatelessWidget {
                 'Docker',
                 'Firebase',
                 'Google Maps API',
+              ],
+            ),
+            ProjectCard(
+              projectName: "Conversify",
+              projectImage: "assets/images/projects/conversify_app.png",
+              projectDescription:
+                  "An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon).",
+              projectLink:
+                  "https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",
+              projectTechnologies: [
+                "Flutter",
+                "Firebase",
               ],
             ),
             ProjectCard(
