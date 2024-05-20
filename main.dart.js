@@ -79545,7 +79545,7 @@ A.eG().$1(J.d8(s))}},
 $S:10}
 A.ahj.prototype={
 $2(a,b){var s=null,r=A.fI(8),q=t.p
-return A.dW(s,A.hj(A.a([B.SK,B.xf,B.SN,B.xf,A.zG(A.a([A.atL(B.SL,new A.ahi(),s)],q),B.aw,B.aP,B.aD)],q),B.ew,B.aP,B.aD),B.r,s,s,new A.cq(B.b_,s,s,r,s,s,B.aG),s,s,B.J,B.Dl,s,s,s)},
+return A.dW(s,A.hj(A.a([B.SK,B.xf,B.SM,B.xf,A.zG(A.a([A.atL(B.SL,new A.ahi(),s)],q),B.aw,B.aP,B.aD)],q),B.ew,B.aP,B.aD),B.r,s,s,new A.cq(B.b_,s,s,r,s,s,B.aG),s,s,B.J,B.Dl,s,s,s)},
 $S:505}
 A.ahi.prototype={
 $0(){A.lG(A.dr("https://pub.dev/packages/cloudflare_ai",0,null))},
@@ -86211,8 +86211,8 @@ B.NV=new A.tB(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.SO=new A.hG("Message failed to send",null,null,null,null,null,null,null,null)
 B.lo=new A.aO(4e6)
 B.NW=new A.mU(B.SO,null,null,null,null,null,null,null,null,null,null,null,null,B.lo,null,null,B.hT,B.T,null)
-B.SM=new A.hG("Message sent successfully",null,null,null,null,null,null,null,null)
-B.NX=new A.mU(B.SM,null,null,null,null,null,null,null,null,null,null,null,null,B.lo,null,null,B.hT,B.T,null)
+B.SN=new A.hG("Message sent successfully",null,null,null,null,null,null,null,null)
+B.NX=new A.mU(B.SN,null,null,null,null,null,null,null,null,null,null,null,null,B.lo,null,null,B.hT,B.T,null)
 B.xi=new A.M7(0,"permissive")
 B.VK=new A.M7(1,"normal")
 B.e9=new A.An(null,null,null,null,!1)
@@ -86559,7 +86559,7 @@ B.SJ=new A.cy(B.QZ,B.Sn,B.S4,B.Pv,B.RX,B.QT,B.Sr,B.Q1,B.Qy,B.RQ,B.Pm,B.S5,B.RU,B
 B.PH=new A.o(!0,B.i,null,null,null,null,null,B.aH,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.SK=new A.hG("Check this out",null,B.PH,null,null,null,null,null,null)
 B.SL=new A.hG("Learn More",null,null,null,null,null,null,null,null)
-B.SN=new A.hG("I have recently released cloudlflare_ai, a Dart library to access Machine Learning Models in Dart.",null,B.ee,null,null,null,null,null,null)
+B.SM=new A.hG("I have recently released cloudflare_ai, a Dart library to access Machine Learning Models in Dart.",null,B.ee,null,null,null,null,null,null)
 B.Rr=new A.o(!0,null,null,null,null,null,30,B.aH,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.SP=new A.hG("Hello, World!",null,B.Rr,null,null,null,null,null,null)
 B.SQ=new A.hG("Submit",null,null,null,null,null,null,null,null)
