@@ -83,6 +83,18 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
+              projectName: "Cloudflare AI Dart",
+              projectImage: "assets/images/projects/cloudflare_ai_library.png",
+              projectDescription:
+                  "cloudflare_ai is a dart library for using the Cloudflare Workers AI, to perform multiple AI based operations.",
+              projectLink:
+                  "https://pub.dev/packages/cloudflare_ai",
+              projectTechnologies: [
+                "Dart",
+                "Cloudflare",
+              ],
+            ),
+            ProjectCard(
               projectName: "Conversify",
               projectImage: "assets/images/projects/conversify_app.png",
               projectDescription:
