@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const SizedBox(height: 8),
                   const Text(
-                    'I have recently released cloudlflare_ai, a Dart library to access Machine Learning Models in Dart.',
+                    'I have recently released cloudflare_ai, a Dart library to access Machine Learning Models in Dart.',
                     style: TextStyle(color: Colors.white),
                   ),
                   const SizedBox(height: 8),
