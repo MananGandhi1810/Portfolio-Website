@@ -46,6 +46,7 @@ dependencies:
   shimmer: ^3.0.0
   animations: ^2.0.8
   dio: ^5.4.1
+  toastification: ^2.0.0
 
 dev_dependencies:
   flutter_test:
