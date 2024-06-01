@@ -206,6 +206,10 @@ class _SkillsPageState extends State<SkillsPage> {
       "icon": SimpleIcons.azuredevops,
     },
     {
+      "skillName": "ClickHouse",
+      "icon": SimpleIcons.clickhouse,
+    },
+    {
       "skillName": "Firebase",
       "icon": SimpleIcons.firebase,
     },
