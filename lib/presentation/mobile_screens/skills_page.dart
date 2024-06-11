@@ -202,12 +202,20 @@ class _SkillsPageState extends State<SkillsPage> {
       "icon": SimpleIcons.jupyter,
     },
     {
+      "skillName": "Cloudflare",
+      "icon": SimpleIcons.cloudflare,
+    },
+    {
       "skillName": "AWS",
       "icon": SimpleIcons.amazonaws,
     },
     {
       "skillName": "Azure",
       "icon": SimpleIcons.azuredevops,
+    },
+    {
+      "skillName": "ClickHouse",
+      "icon": SimpleIcons.clickhouse,
     },
     {
       "skillName": "Firebase",
