@@ -130,6 +130,14 @@ class _SkillsPageState extends State<SkillsPage> {
       "icon": SimpleIcons.androidstudio,
     },
     {
+      "skillName": "Vim",
+      "icon": SimpleIcons.vim,
+    },
+    {
+      "skillName": "Neovim",
+      "icon": SimpleIcons.neovim,
+    },
+    {
       "skillName": "Windows",
       "icon": SimpleIcons.windows,
     },
