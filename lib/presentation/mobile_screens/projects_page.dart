@@ -49,8 +49,7 @@ class ProjectsPage extends StatelessWidget {
               projectImage: 'assets/images/projects/mpstme_ontrack_app.png',
               projectDescription:
                   'MPSTME OnTrack is built with an aim of never letting anyone from MPSTME get late to a lecture searching for their class. MPSTME OnTrack allows a user to store their schedule with their class details.',
-              projectLink:
-                  'https://appdev-gdsc-mpstme.github.io/MPSTME_OnTrack/',
+              projectLink: 'https://ontrack.gdscmpstme.com/',
               projectTechnologies: [
                 'Flutter',
               ],
@@ -87,8 +86,7 @@ class ProjectsPage extends StatelessWidget {
               projectImage: "assets/images/projects/cloudflare_ai_library.png",
               projectDescription:
                   "cloudflare_ai is a dart library for using the Cloudflare Workers AI, to perform multiple AI based operations.",
-              projectLink:
-                  "https://pub.dev/packages/cloudflare_ai",
+              projectLink: "https://pub.dev/packages/cloudflare_ai",
               projectTechnologies: [
                 "Dart",
                 "Cloudflare",
