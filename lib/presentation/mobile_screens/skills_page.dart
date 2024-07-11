@@ -158,6 +158,10 @@ class _SkillsPageState extends State<SkillsPage> {
       "icon": SimpleIcons.googleplay,
     },
     {
+      "skillName": "App Store Connect",
+      "icon": SimpleIcons.appstore,
+    },
+    {
       "skillName": "Postman",
       "icon": SimpleIcons.postman,
     },
