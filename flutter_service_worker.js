@@ -35,15 +35,15 @@ const RESOURCES = {"sitemap.xml": "ebba2be6ebabdfb155af2e2e44eb836c",
 "assets/assets/images/projects/skvjum_app.png": "5a96308652294ee9fecabfe75bf015a7",
 "assets/assets/images/projects/docker_sensei_app.jpeg": "aff0ff7668dd48d14a3d4e88e3990b40",
 "assets/assets/images/projects/cloudflare_ai_library.png": "f601a899271f78e2eb7ee65c6519d251",
-"assets/assets/images/projects/mpstme_ontrack_app.png": "3d0dd5a156b1b7a4000730b6088c77ec",
+"assets/assets/images/projects/mpstme_ontrack_app.png": "23180c60102f6162730c0d31adfac915",
 "assets/assets/images/projects/conversify_app.png": "bf364d476cf16ef29484cd7d8e8ef3a1",
 "assets/assets/images/projects/brainybox_app.png": "08d483d956a9f38289f568fc0a8c8ead",
 "assets/fonts/MaterialIcons-Regular.otf": "7054771db7472d1dfe5704d4076d8b5f",
 "assets/AssetManifest.json": "8b127077286a6c6c05236fcbf082329f",
 "assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
-"index.html": "3686400bfa400fcb5a3bd78ef6e2a43d",
-"/": "3686400bfa400fcb5a3bd78ef6e2a43d",
-"main.dart.js": "22fbe4e5032397dbc86bceab0529d0b5"};
+"index.html": "54befb0f08acfb6ad3b9c33e287b2658",
+"/": "54befb0f08acfb6ad3b9c33e287b2658",
+"main.dart.js": "64bffa6f5f64e1efa3197e928ecfe9b5"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
