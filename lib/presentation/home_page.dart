@@ -4,8 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:starsview/config/StarsConfig.dart';
 import 'package:starsview/starsview.dart';
-import 'package:toastification/toastification.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../providers/color_provider.dart';
 import 'components/about_me.dart';
