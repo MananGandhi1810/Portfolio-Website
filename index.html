@@ -35,12 +35,6 @@
   <title>Manan Gandhi</title>
   <link rel="manifest" href="manifest.json">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1422749816";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
   <style>
     body {
       background-color: #2196F3;
@@ -232,22 +226,8 @@
         transform="translate(-180.86417 -106.46046)" fill="#a0616a" />
     </svg>
   </div>
-  <script>
-    window.addEventListener('load', function (ev) {
-      var loading = document.querySelector('#loading');
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: async function (engineInitializer) {
-          let appRunner = await engineInitializer.initializeEngine();
 
-          await appRunner.runApp();
-          loading.classList.add('hidden');
-        }
-      });
-    });
-  </script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 
 </html>
