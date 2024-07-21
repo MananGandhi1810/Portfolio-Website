@@ -43,7 +43,7 @@ const RESOURCES = {"sitemap.xml": "ebba2be6ebabdfb155af2e2e44eb836c",
 "assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
 "index.html": "0054e1938583645ae158b442b0777177",
 "/": "0054e1938583645ae158b442b0777177",
-"main.dart.js": "ab38de4df04f91a9243b61d5aa4aec4e"};
+"main.dart.js": "1ce8070982ae35166da0f36c4a0cd825"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
