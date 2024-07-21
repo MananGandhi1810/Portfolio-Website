@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(milliseconds: 500), () {
+    Future.delayed(const Duration(milliseconds: 500), () {
       try {
         toastification.showCustom(
           context: context, // optional if you use ToastificationWrapper
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   const SizedBox(height: 8),
                   const Text(
-                    'I have recently released cloudflare_ai, a Dart library to access Machine Learning Models in Dart.',
+                    'My latest project is MPSTME OnTrack, which we developed at GDSC MPSTME. The app allows users to search for classes on the campus of MPSTME.',
                     style: TextStyle(color: Colors.white),
                   ),
                   const SizedBox(height: 8),
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                       ElevatedButton(
                         onPressed: () {
                           launchUrl(
-                            Uri.parse("https://pub.dev/packages/cloudflare_ai"),
+                            Uri.parse("https://ontrack.gdscmpstme.com"),
                           );
                         },
                         child: const Text('Learn More'),
