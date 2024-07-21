@@ -53,6 +53,8 @@ class ProjectsPage extends StatelessWidget {
                   'https://appdev-gdsc-mpstme.github.io/MPSTME_OnTrack/',
               projectTechnologies: [
                 'Flutter',
+                'Google Play Store',
+                'Apple App Store',
               ],
             ),
             ProjectCard(
@@ -87,8 +89,7 @@ class ProjectsPage extends StatelessWidget {
               projectImage: "assets/images/projects/cloudflare_ai_library.png",
               projectDescription:
                   "cloudflare_ai is a dart library for using the Cloudflare Workers AI, to perform multiple AI based operations.",
-              projectLink:
-                  "https://pub.dev/packages/cloudflare_ai",
+              projectLink: "https://pub.dev/packages/cloudflare_ai",
               projectTechnologies: [
                 "Dart",
                 "Cloudflare",
