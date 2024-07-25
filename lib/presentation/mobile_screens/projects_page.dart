@@ -96,7 +96,7 @@ class ProjectsPage extends StatelessWidget {
               projectName: "Conversify",
               projectImage: "assets/images/projects/conversify_app.png",
               projectDescription:
-                  "An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon).",
+                  "An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon). 1st runner up at Tark Debate-a-Thon held at MPSTME, Mumbai",
               projectLink:
                   "https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",
               projectTechnologies: [
