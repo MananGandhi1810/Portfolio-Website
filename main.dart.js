@@ -42834,7 +42834,7 @@ r=A.mF(B.K9,B.f,r==null?1:r)
 r.toString
 q=p.a8(0,q.gm(q))
 if(q==null)q=1
-return A.aAb(new A.zU(null,A.ayt(q,B.HH,new A.cu(B.zA,B.zD)),s,1,B.P5,null),r)}}
+return A.aAb(new A.zU(null,A.ayt(q,B.HI,new A.cu(B.zA,B.zD)),s,1,B.P5,null),r)}}
 A.G0.prototype={
 l(){var s=this,r=s.c4$
 if(r!=null)r.H(0,s.ghQ())
@@ -47162,7 +47162,7 @@ A.ana.prototype={
 $2(a,b){return this.a.B$.bV(a,this.b)},
 $S:11}
 A.Py.prototype={
-gA9(){return B.HG},
+gA9(){return B.HH},
 E7(a){var s
 switch(a.a){case 0:s=this.d.b
 break
@@ -51577,7 +51577,7 @@ A.Il.prototype={
 PR(a,b,c,d,e,f){return A.aHN(a,b,c,d,e,f)}}
 A.Le.prototype={
 a_y(a){var s=t.Tr
-return A.a7(new A.aj(B.Hz,new A.aay(a),s),!0,s.i("aF.E"))},
+return A.a7(new A.aj(B.HA,new A.aay(a),s),!0,s.i("aF.E"))},
 j(a,b){if(b==null)return!1
 if(this===b)return!0
 if(J.Q(b)!==A.u(this))return!1
@@ -68722,7 +68722,7 @@ s.a.push(r.ga7b())
 r.e=p}return p},
 gLV(){var s=this.f
 if(s===$){s!==$&&A.ai()
-s=this.f=new A.ajY(1,B.HA,B.bL)}return s},
+s=this.f=new A.ajY(1,B.HB,B.bL)}return s},
 gh_(){var s=this.z
 s=s==null?null:$.c_().d===s
 return s===!0},
@@ -88967,7 +88967,7 @@ B.Hy=A.b(s([B.a6,B.au,B.X,B.av,B.ai,B.aj,B.N,B.ac,B.aw,B.ae,B.c8]),A.au("z<ek>")
 B.bI=new A.dv(1,"fuchsia")
 B.bJ=new A.dv(3,"linux")
 B.bK=new A.dv(5,"windows")
-B.Hz=A.b(s([B.ab,B.bI,B.a7,B.bJ,B.bb,B.bK]),A.au("z<dv>"))
+B.HA=A.b(s([B.ab,B.bI,B.a7,B.bJ,B.bb,B.bK]),A.au("z<dv>"))
 B.Wx=new A.fP(0,1)
 B.WF=new A.fP(0.5,1)
 B.Wz=new A.fP(0.5375,0.75)
@@ -88979,15 +88979,15 @@ B.WB=new A.fP(0.8875,0.25)
 B.WE=new A.fP(0.925,0.5)
 B.WA=new A.fP(0.9625,0.75)
 B.Wy=new A.fP(1,1)
-B.HA=A.b(s([B.Wx,B.WF,B.Wz,B.WC,B.WH,B.WG,B.WD,B.WB,B.WE,B.WA,B.Wy]),A.au("z<fP>"))
+B.HB=A.b(s([B.Wx,B.WF,B.Wz,B.WC,B.WH,B.WG,B.WD,B.WB,B.WE,B.WA,B.Wy]),A.au("z<fP>"))
 B.j1=A.b(s([!0,!1]),t.HZ)
 B.aX=new A.jX(0,"label")
 B.an=new A.jX(1,"avatar")
 B.bp=new A.jX(2,"deleteIcon")
-B.HG=A.b(s([B.aX,B.an,B.bp]),A.au("z<jX>"))
+B.HH=A.b(s([B.aX,B.an,B.bp]),A.au("z<jX>"))
 B.f=new A.i(0,0)
 B.zU=new A.dC(0.2,B.d_,B.lz,B.f,11)
-B.HH=A.b(s([B.zU]),t.sq)
+B.HI=A.b(s([B.zU]),t.sq)
 B.j2=A.b(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
 B.m=new A.yZ(0,"ignored")
 B.aO=new A.h(4294967304)
@@ -89065,7 +89065,7 @@ B.H2=A.b(s([B.rO,null,null,B.cK]),t.L)
 B.rP=new A.h(57)
 B.ef=new A.h(8589935161)
 B.H3=A.b(s([B.rP,null,null,B.ef]),t.L)
-B.HC=A.b(s([B.ea,B.ea,B.fF,null]),t.L)
+B.HD=A.b(s([B.ea,B.ea,B.fF,null]),t.L)
 B.fB=new A.h(4294967555)
 B.H6=A.b(s([B.fB,null,B.fB,null]),t.L)
 B.bC=new A.h(4294968065)
@@ -89078,7 +89078,7 @@ B.bD=new A.h(4294968068)
 B.Ge=A.b(s([B.bD,null,null,B.cK]),t.L)
 B.j6=new A.h(4294968321)
 B.GA=A.b(s([B.j6,null,null,B.je]),t.L)
-B.HD=A.b(s([B.e9,B.e9,B.fE,null]),t.L)
+B.HE=A.b(s([B.e9,B.e9,B.fE,null]),t.L)
 B.Gy=A.b(s([B.aG,null,null,B.cG]),t.L)
 B.cD=new A.h(4294968069)
 B.Gu=A.b(s([B.cD,null,null,B.ec]),t.L)
@@ -89089,13 +89089,13 @@ B.cE=new A.h(4294968070)
 B.Gv=A.b(s([B.cE,null,null,B.ee]),t.L)
 B.j7=new A.h(4294968327)
 B.GB=A.b(s([B.j7,null,null,B.jd]),t.L)
-B.HE=A.b(s([B.eb,B.eb,B.fG,null]),t.L)
+B.HF=A.b(s([B.eb,B.eb,B.fG,null]),t.L)
 B.e7=new A.h(4294968071)
 B.Gw=A.b(s([B.e7,null,null,B.ed]),t.L)
 B.e8=new A.h(4294968072)
 B.FS=A.b(s([B.e8,null,null,B.ef]),t.L)
-B.HF=A.b(s([B.cm,B.cm,B.cF,null]),t.L)
-B.Ji=new A.cr(["*",B.GK,"+",B.GL,"-",B.GM,".",B.GN,"/",B.GO,"0",B.H7,"1",B.H8,"2",B.H9,"3",B.Ha,"4",B.Hb,"5",B.Hc,"6",B.Hd,"7",B.He,"8",B.H2,"9",B.H3,"Alt",B.HC,"AltGraph",B.H6,"ArrowDown",B.Gr,"ArrowLeft",B.Gs,"ArrowRight",B.Gt,"ArrowUp",B.Ge,"Clear",B.GA,"Control",B.HD,"Delete",B.Gy,"End",B.Gu,"Enter",B.Gp,"Home",B.Gv,"Insert",B.GB,"Meta",B.HE,"PageDown",B.Gw,"PageUp",B.FS,"Shift",B.HF],A.au("cr<j,A<h?>>"))
+B.HG=A.b(s([B.cm,B.cm,B.cF,null]),t.L)
+B.Ji=new A.cr(["*",B.GK,"+",B.GL,"-",B.GM,".",B.GN,"/",B.GO,"0",B.H7,"1",B.H8,"2",B.H9,"3",B.Ha,"4",B.Hb,"5",B.Hc,"6",B.Hd,"7",B.He,"8",B.H2,"9",B.H3,"Alt",B.HD,"AltGraph",B.H6,"ArrowDown",B.Gr,"ArrowLeft",B.Gs,"ArrowRight",B.Gt,"ArrowUp",B.Ge,"Clear",B.GA,"Control",B.HE,"Delete",B.Gy,"End",B.Gu,"Enter",B.Gp,"Home",B.Gv,"Insert",B.GB,"Meta",B.HF,"PageDown",B.Gw,"PageUp",B.FS,"Shift",B.HG],A.au("cr<j,A<h?>>"))
 B.G5=A.b(s([42,null,null,8589935146]),t.Z)
 B.G6=A.b(s([43,null,null,8589935147]),t.Z)
 B.G8=A.b(s([45,null,null,8589935149]),t.Z)
@@ -90380,7 +90380,7 @@ B.OV=new A.ab(B.cI,!0,!0,!1,!1,B.b0)
 B.OU=new A.ab(B.cJ,!0,!0,!1,!1,B.b0)
 B.cU=new A.Om(1,"down")
 B.GI=A.b(s(["Flutter","Flask","MongoDB","AWS"]),t.s)
-B.LQ=new A.fF("SKVJUM: A Community App","assets/images/projects/skvjum_app.png","A community app for the members of Shree Khambhat Vishashrimali Jain Upnagar Mandal.","https://play.google.com/store/apps/details?id=com.skvjum.skvjum_app",B.GI,null)
+B.LR=new A.fF("SKVJUM: A Community App","assets/images/projects/skvjum_app.png","A community app for the members of Shree Khambhat Vishashrimali Jain Upnagar Mandal.","https://play.google.com/store/apps/details?id=com.skvjum.skvjum_app",B.GI,null)
 B.Gg=A.b(s(["Flutter","Google Play Store","Apple App Store"]),t.s)
 B.LN=new A.fF("MPSTME OnTrack","assets/images/projects/mpstme_ontrack_app.png","MPSTME OnTrack is built with an aim of never letting anyone from MPSTME get late to a lecture searching for their class. MPSTME OnTrack allows a user to store their schedule with their class details.","https://ontrack.gdscmpstme.com/",B.Gg,null)
 B.mU=A.b(s(["Flutter","Firebase"]),t.s)
@@ -90389,17 +90389,17 @@ B.GH=A.b(s(["Express.js","Flutter","Docker","Firebase","Google Maps API"]),t.s)
 B.LP=new A.fF("BrainyBox","assets/images/projects/brainybox_app.png","An edutainment platform, which helps students learn new concepts in a fun and interactive way. 1st runner up at IET Hack n Code, held at MPSTME, Mumbai.","https://github.com/MananGandhi1810/BinaryBandits-HnC-2024",B.GH,null)
 B.GG=A.b(s(["Dart","Cloudflare"]),t.s)
 B.LO=new A.fF("Cloudflare AI Dart","assets/images/projects/cloudflare_ai_library.png","cloudflare_ai is a dart library for using the Cloudflare Workers AI, to perform multiple AI based operations.","https://pub.dev/packages/cloudflare_ai",B.GG,null)
-B.LU=new A.fF("Conversify","assets/images/projects/conversify_app.png","An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon).","https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",B.mU,null)
-B.HB=A.b(s(["Flutter","Express.js","Socket.io","PostgreSQL","Redis","Docker","Prisma ORM","Azure"]),t.s)
-B.LL=new A.fF("Chess","assets/images/projects/chess_app.jpg","A scalable chess game, which can be played by multiple users at the same time.","https://chess.manangandhi.tech/",B.HB,null)
+B.LQ=new A.fF("Conversify","assets/images/projects/conversify_app.png","An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon). 1st runner up at Tark Debate-a-Thon held at MPSTME, Mumbai","https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",B.mU,null)
+B.HC=A.b(s(["Flutter","Express.js","Socket.io","PostgreSQL","Redis","Docker","Prisma ORM","Azure"]),t.s)
+B.LL=new A.fF("Chess","assets/images/projects/chess_app.jpg","A scalable chess game, which can be played by multiple users at the same time.","https://chess.manangandhi.tech/",B.HC,null)
 B.Hv=A.b(s(["Node.js","Flutter","Docker","Pusher","Next.js","Express.js","PostgreSQL","Google Cloud Platform"]),t.s)
-B.LR=new A.fF("DockerSensei","assets/images/projects/docker_sensei_app.jpeg","A docker container management system, which helps in managing and monitoring the docker containers running on multiple server. Built during HackNiche, a 24 hour hackathon held at DJSCE.","https://github.com/MananGandhi1810/hackniche-2024",B.Hv,null)
+B.LS=new A.fF("DockerSensei","assets/images/projects/docker_sensei_app.jpeg","A docker container management system, which helps in managing and monitoring the docker containers running on multiple server. Built during HackNiche, a 24 hour hackathon held at DJSCE.","https://github.com/MananGandhi1810/hackniche-2024",B.Hv,null)
 B.H4=A.b(s(["Flutter","Node.js","Socket.io","Express.js"]),t.s)
-B.LT=new A.fF("Stock Market Game","assets/images/projects/stock_market_app.png","A realtime online multiplayer game, where the stock market can be simulated.","https://github.com/MananGandhi1810/StockMarketGame",B.H4,null)
+B.LU=new A.fF("Stock Market Game","assets/images/projects/stock_market_app.png","A realtime online multiplayer game, where the stock market can be simulated.","https://github.com/MananGandhi1810/StockMarketGame",B.H4,null)
 B.GD=A.b(s(["Python","Flask","HTML","CSS","JavaScript"]),t.s)
-B.LS=new A.fF("ElectricVehicles Website","assets/images/projects/electric_vehicles_website.png","A website that helps people to make informed decisions on buying electric vehicles.","https://github.com/MananGandhi1810/FooBar-Electric-Vehicle-CyberCypher-Hackathon",B.GD,null)
-B.HI=A.b(s([B.LQ,B.LN,B.LM,B.LP,B.LO,B.LU,B.LL,B.LR,B.LT,B.LS]),t.p)
-B.CP=new A.oi(B.ak,B.aP,B.aH,B.aB,null,B.cU,null,B.HI,null)
+B.LT=new A.fF("ElectricVehicles Website","assets/images/projects/electric_vehicles_website.png","A website that helps people to make informed decisions on buying electric vehicles.","https://github.com/MananGandhi1810/FooBar-Electric-Vehicle-CyberCypher-Hackathon",B.GD,null)
+B.Hz=A.b(s([B.LR,B.LN,B.LM,B.LP,B.LO,B.LQ,B.LL,B.LS,B.LU,B.LT]),t.p)
+B.CP=new A.oi(B.ak,B.aP,B.aH,B.aB,null,B.cU,null,B.Hz,null)
 B.P_=new A.B1(B.CP,null)
 B.P1=new A.F(1e5,1e5)
 B.y4=new A.F(10,10)
