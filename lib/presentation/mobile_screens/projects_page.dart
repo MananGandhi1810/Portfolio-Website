@@ -52,6 +52,8 @@ class ProjectsPage extends StatelessWidget {
               projectLink: 'https://ontrack.gdscmpstme.com/',
               projectTechnologies: [
                 'Flutter',
+                'Google Play Store',
+                'Apple App Store',
               ],
             ),
             ProjectCard(
