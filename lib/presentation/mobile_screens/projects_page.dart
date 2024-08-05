@@ -48,7 +48,7 @@ class ProjectsPage extends StatelessWidget {
               projectName: 'MPSTME OnTrack',
               projectImage: 'assets/images/projects/mpstme_ontrack_app.png',
               projectDescription:
-                  'MPSTME OnTrack is built with an aim of never letting anyone from MPSTME get late to a lecture searching for their class. MPSTME OnTrack allows a user to store their schedule with their class details.',
+                  'MPSTME OnTrack is built with an aim of never letting anyone from MPSTME get late to a lecture searching for their class. MPSTME OnTrack allows a user to store their schedule with their class details. Currently has 1400+ downloads on Play Store and App Store combined.',
               projectLink: 'https://ontrack.gdscmpstme.com/',
               projectTechnologies: [
                 'Flutter',
