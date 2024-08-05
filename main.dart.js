@@ -397,7 +397,7 @@ aOP(){var s,r=A.dO().b
 if(r==null)s=null
 else{r=r.canvasKitVariant
 if(r==null)r=null
-s=r}r=A.aRw(A.aJ1(B.Hw,s==null?"auto":s))
+s=r}r=A.aRw(A.aJ1(B.Hx,s==null?"auto":s))
 return new A.aj(r,new A.aqh(),A.a5(r).i("aj<1,j>"))},
 aQD(a,b){return b+a},
 Ye(){var s=0,r=A.O(t.e),q,p,o
@@ -50280,7 +50280,7 @@ A.ano.prototype={
 $2(a,b){return this.c.bV(a,b)},
 $S:11}
 A.Qm.prototype={
-gA9(){return B.Hy},
+gA9(){return B.Hz},
 E7(a){var s,r=this
 switch(a.a){case 0:s=r.d.z
 break
@@ -88949,9 +88949,9 @@ B.n2=A.b(s([B.df,B.dg,B.dh,B.di,B.jp,B.jq,B.jr,B.js,B.t5]),A.au("z<ha>"))
 B.B0=new A.qV(0,"auto")
 B.B1=new A.qV(1,"full")
 B.B2=new A.qV(2,"chromium")
-B.Hw=A.b(s([B.B0,B.B1,B.B2]),A.au("z<qV>"))
+B.Hx=A.b(s([B.B0,B.B1,B.B2]),A.au("z<qV>"))
 B.de=A.b(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
-B.Hx=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
+B.Hy=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
 B.a6=new A.ek(0,"icon")
 B.au=new A.ek(1,"input")
 B.X=new A.ek(2,"label")
@@ -88963,7 +88963,7 @@ B.ac=new A.ek(7,"suffixIcon")
 B.aw=new A.ek(8,"helperError")
 B.ae=new A.ek(9,"counter")
 B.c8=new A.ek(10,"container")
-B.Hy=A.b(s([B.a6,B.au,B.X,B.av,B.ai,B.aj,B.N,B.ac,B.aw,B.ae,B.c8]),A.au("z<ek>"))
+B.Hz=A.b(s([B.a6,B.au,B.X,B.av,B.ai,B.aj,B.N,B.ac,B.aw,B.ae,B.c8]),A.au("z<ek>"))
 B.bI=new A.dv(1,"fuchsia")
 B.bJ=new A.dv(3,"linux")
 B.bK=new A.dv(5,"windows")
@@ -90380,26 +90380,26 @@ B.OV=new A.ab(B.cI,!0,!0,!1,!1,B.b0)
 B.OU=new A.ab(B.cJ,!0,!0,!1,!1,B.b0)
 B.cU=new A.Om(1,"down")
 B.GI=A.b(s(["Flutter","Flask","MongoDB","AWS"]),t.s)
-B.LR=new A.fF("SKVJUM: A Community App","assets/images/projects/skvjum_app.png","A community app for the members of Shree Khambhat Vishashrimali Jain Upnagar Mandal.","https://play.google.com/store/apps/details?id=com.skvjum.skvjum_app",B.GI,null)
+B.LQ=new A.fF("SKVJUM: A Community App","assets/images/projects/skvjum_app.png","A community app for the members of Shree Khambhat Vishashrimali Jain Upnagar Mandal.","https://play.google.com/store/apps/details?id=com.skvjum.skvjum_app",B.GI,null)
 B.Gg=A.b(s(["Flutter","Google Play Store","Apple App Store"]),t.s)
-B.LN=new A.fF("MPSTME OnTrack","assets/images/projects/mpstme_ontrack_app.png","MPSTME OnTrack is built with an aim of never letting anyone from MPSTME get late to a lecture searching for their class. MPSTME OnTrack allows a user to store their schedule with their class details.","https://ontrack.gdscmpstme.com/",B.Gg,null)
+B.LR=new A.fF("MPSTME OnTrack","assets/images/projects/mpstme_ontrack_app.png","MPSTME OnTrack is built with an aim of never letting anyone from MPSTME get late to a lecture searching for their class. MPSTME OnTrack allows a user to store their schedule with their class details. Currently has 1400+ downloads on Play Store and App Store combined.","https://ontrack.gdscmpstme.com/",B.Gg,null)
 B.mU=A.b(s(["Flutter","Firebase"]),t.s)
 B.LM=new A.fF("Save Birds","assets/images/projects/save_birds_app.png","A suite of apps for the Save Birds NGO which rescues and treats injured birds.","https://play.google.com/store/search?q=pub%3ASave%20Birds&c=apps",B.mU,null)
 B.GH=A.b(s(["Express.js","Flutter","Docker","Firebase","Google Maps API"]),t.s)
-B.LP=new A.fF("BrainyBox","assets/images/projects/brainybox_app.png","An edutainment platform, which helps students learn new concepts in a fun and interactive way. 1st runner up at IET Hack n Code, held at MPSTME, Mumbai.","https://github.com/MananGandhi1810/BinaryBandits-HnC-2024",B.GH,null)
+B.LO=new A.fF("BrainyBox","assets/images/projects/brainybox_app.png","An edutainment platform, which helps students learn new concepts in a fun and interactive way. 1st runner up at IET Hack n Code, held at MPSTME, Mumbai.","https://github.com/MananGandhi1810/BinaryBandits-HnC-2024",B.GH,null)
 B.GG=A.b(s(["Dart","Cloudflare"]),t.s)
-B.LO=new A.fF("Cloudflare AI Dart","assets/images/projects/cloudflare_ai_library.png","cloudflare_ai is a dart library for using the Cloudflare Workers AI, to perform multiple AI based operations.","https://pub.dev/packages/cloudflare_ai",B.GG,null)
-B.LQ=new A.fF("Conversify","assets/images/projects/conversify_app.png","An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon). 1st runner up at Tark Debate-a-Thon held at MPSTME, Mumbai","https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",B.mU,null)
+B.LN=new A.fF("Cloudflare AI Dart","assets/images/projects/cloudflare_ai_library.png","cloudflare_ai is a dart library for using the Cloudflare Workers AI, to perform multiple AI based operations.","https://pub.dev/packages/cloudflare_ai",B.GG,null)
+B.LP=new A.fF("Conversify","assets/images/projects/conversify_app.png","An app to help people discover other people of different domains to build exciting projects (built during a 24 hour hackathon). 1st runner up at Tark Debate-a-Thon held at MPSTME, Mumbai","https://github.com/MananGandhi1810/Verbal-Virtuosos-Debate-a-thon",B.mU,null)
 B.HC=A.b(s(["Flutter","Express.js","Socket.io","PostgreSQL","Redis","Docker","Prisma ORM","Azure"]),t.s)
 B.LL=new A.fF("Chess","assets/images/projects/chess_app.jpg","A scalable chess game, which can be played by multiple users at the same time.","https://chess.manangandhi.tech/",B.HC,null)
-B.Hv=A.b(s(["Node.js","Flutter","Docker","Pusher","Next.js","Express.js","PostgreSQL","Google Cloud Platform"]),t.s)
-B.LS=new A.fF("DockerSensei","assets/images/projects/docker_sensei_app.jpeg","A docker container management system, which helps in managing and monitoring the docker containers running on multiple server. Built during HackNiche, a 24 hour hackathon held at DJSCE.","https://github.com/MananGandhi1810/hackniche-2024",B.Hv,null)
+B.Hw=A.b(s(["Node.js","Flutter","Docker","Pusher","Next.js","Express.js","PostgreSQL","Google Cloud Platform"]),t.s)
+B.LS=new A.fF("DockerSensei","assets/images/projects/docker_sensei_app.jpeg","A docker container management system, which helps in managing and monitoring the docker containers running on multiple server. Built during HackNiche, a 24 hour hackathon held at DJSCE.","https://github.com/MananGandhi1810/hackniche-2024",B.Hw,null)
 B.H4=A.b(s(["Flutter","Node.js","Socket.io","Express.js"]),t.s)
 B.LU=new A.fF("Stock Market Game","assets/images/projects/stock_market_app.png","A realtime online multiplayer game, where the stock market can be simulated.","https://github.com/MananGandhi1810/StockMarketGame",B.H4,null)
 B.GD=A.b(s(["Python","Flask","HTML","CSS","JavaScript"]),t.s)
 B.LT=new A.fF("ElectricVehicles Website","assets/images/projects/electric_vehicles_website.png","A website that helps people to make informed decisions on buying electric vehicles.","https://github.com/MananGandhi1810/FooBar-Electric-Vehicle-CyberCypher-Hackathon",B.GD,null)
-B.Hz=A.b(s([B.LR,B.LN,B.LM,B.LP,B.LO,B.LQ,B.LL,B.LS,B.LU,B.LT]),t.p)
-B.CP=new A.oi(B.ak,B.aP,B.aH,B.aB,null,B.cU,null,B.Hz,null)
+B.Hv=A.b(s([B.LQ,B.LR,B.LM,B.LO,B.LN,B.LP,B.LL,B.LS,B.LU,B.LT]),t.p)
+B.CP=new A.oi(B.ak,B.aP,B.aH,B.aB,null,B.cU,null,B.Hv,null)
 B.P_=new A.B1(B.CP,null)
 B.P1=new A.F(1e5,1e5)
 B.y4=new A.F(10,10)
@@ -91255,7 +91255,7 @@ r($,"aPw","aF6",()=>A.aOW())
 r($,"aX6","aFA",()=>A.dO().gFl()+"roboto/v20/KFOmCnqEu92Fr1Me5WZLCzYlKw.ttf")
 r($,"aWr","aF4",()=>A.aOL(A.qA(A.qA(A.avk(),"window"),"FinalizationRegistry"),A.axR(new A.aqA())))
 r($,"aXT","aG3",()=>new A.aa9())
-s($,"aWx","aF8",()=>A.aKx(B.Hx))
+s($,"aWx","aF8",()=>A.aKx(B.Hy))
 s($,"aWw","ash",()=>A.a6I(A.aHu($.aF8())))
 s($,"aWj","aF0",()=>A.azD(A.D(A.ah(),"ParagraphBuilder")))
 s($,"aST","aDe",()=>A.aBp(A.qA(A.qA(A.qA(A.avk(),"window"),"flutterCanvasKit"),"Paint")))
