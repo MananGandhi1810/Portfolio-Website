@@ -147,7 +147,8 @@ class _ContactFormPageState extends State<ContactFormPage> {
                       'subject': _subjectController.text,
                       'message': _messageController.text,
                     };
-                    final res = await DioService().post('https://formspree.io/f/xjvnopwd', data);
+                    final res = await DioService()
+                        .post('https://formspree.io/f/xjvnopwd', data);
                     if (res.statusCode == 200) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
@@ -164,7 +165,7 @@ class _ContactFormPageState extends State<ContactFormPage> {
                   }
                 },
                 style: ButtonStyle(
-                  shape: MaterialStateProperty.all(
+                  shape: WidgetStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50),
                     ),
