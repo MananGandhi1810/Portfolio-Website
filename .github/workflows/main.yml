@@ -33,7 +33,7 @@ jobs:
         run: flutter build web --release --web-renderer canvaskit
      
       - name: Upload Web Build Files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: web-release
           path: ./build/web
