@@ -198,6 +198,10 @@ class _SkillsPageState extends State<SkillsPage> {
       "icon": SimpleIcons.redis,
     },
     {
+      "skillName": "Apache Kafka",
+      "icon": SimpleIcons.apachekafka,
+    },
+    {
       "skillName": "Google Colab",
       "icon": SimpleIcons.googlecolab,
     },

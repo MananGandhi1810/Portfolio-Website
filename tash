@@ -1,0 +1,13 @@
+[1mdiff --git a/lib/presentation/mobile_screens/mobile_home_page.dart b/lib/presentation/mobile_screens/mobile_home_page.dart[m
+[1mindex 0655160..7a7c7d1 100644[m
+[1m--- a/lib/presentation/mobile_screens/mobile_home_page.dart[m
+[1m+++ b/lib/presentation/mobile_screens/mobile_home_page.dart[m
+[36m@@ -37,7 +37,7 @@[m [mclass _MobileHomePageState extends State<MobileHomePage>[m
+     );[m
+     _tween = Tween<double>(begin: 0, end: 1);[m
+     _tween!.animate(_animationController!).addListener(() {[m
+[31m-      setState(() {});[m
+[32m+[m[32m      setState(() {});[m[41m [m
+     });[m
+     _animationController!.addStatusListener((status) {[m
+       if (status == AnimationStatus.completed) {[m
