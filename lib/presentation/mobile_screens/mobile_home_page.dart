@@ -46,57 +46,6 @@ class _MobileHomePageState extends State<MobileHomePage>
     });
     _animationController!.forward();
     super.initState();
-    Future.delayed(const Duration(milliseconds: 500), () {
-      try {
-        toastification.showCustom(
-          context: context, // optional if you use ToastificationWrapper
-          autoCloseDuration: const Duration(seconds: 4),
-          alignment: Alignment.topCenter,
-          builder: (BuildContext context, ToastificationItem holder) {
-            return Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: Colors.blue,
-              ),
-              padding: const EdgeInsets.all(16),
-              margin: const EdgeInsets.all(8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'Check this out',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  const Text(
-                    'My latest project is MPSTME OnTrack, which we developed at GDSC MPSTME. The app allows users to search for classes on the campus of MPSTME.',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  const SizedBox(height: 8),
-                  Row(
-                    children: [
-                      ElevatedButton(
-                        onPressed: () {
-                          launchUrl(
-                            Uri.parse("https://ontrack.gdscmpstme.com"),
-                          );
-                        },
-                        child: const Text('Learn More'),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            );
-          },
-        );
-      } catch (e) {
-        debugPrint(e.toString());
-      }
-    });
   }
 
   @override

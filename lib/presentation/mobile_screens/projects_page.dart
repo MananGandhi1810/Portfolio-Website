@@ -69,6 +69,40 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
+              projectName: 'Chess',
+              projectImage: 'assets/images/projects/chess_app.jpg',
+              projectDescription:
+                  'A scalable chess game, which can be played by multiple users at the same time.',
+              projectLink: 'https://chess.manangandhi.tech/',
+              projectTechnologies: [
+                'Flutter',
+                'Express.js',
+                'Socket.io',
+                'PostgreSQL',
+                'Redis',
+                'Docker',
+                'Prisma ORM',
+                'Azure',
+              ],
+            ),
+            ProjectCard(
+              projectName: 'LeetCode Clone',
+              projectImage: 'assets/images/projects/leetcode_clone_website.png',
+              projectDescription:
+                  'A platform to practice logic based programming questions',
+              projectLink: 'https://code.manangandhi.tech/',
+              projectTechnologies: [
+                'Express.js',
+                'React.js',
+                'PostgreSQL',
+                'Redis',
+                'Docker',
+                'Prisma ORM',
+                'Shadcn/UI',
+                'Azure',
+              ],
+            ),
+            ProjectCard(
               projectName: 'BrainyBox',
               projectImage: 'assets/images/projects/brainybox_app.png',
               projectDescription:
@@ -104,23 +138,6 @@ class ProjectsPage extends StatelessWidget {
               projectTechnologies: [
                 "Flutter",
                 "Firebase",
-              ],
-            ),
-            ProjectCard(
-              projectName: 'Chess',
-              projectImage: 'assets/images/projects/chess_app.jpg',
-              projectDescription:
-                  'A scalable chess game, which can be played by multiple users at the same time.',
-              projectLink: 'https://chess.manangandhi.tech/',
-              projectTechnologies: [
-                'Flutter',
-                'Express.js',
-                'Socket.io',
-                'PostgreSQL',
-                'Redis',
-                'Docker',
-                'Prisma ORM',
-                'Azure',
               ],
             ),
             ProjectCard(
