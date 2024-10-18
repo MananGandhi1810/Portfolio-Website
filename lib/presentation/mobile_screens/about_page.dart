@@ -70,7 +70,7 @@ class _AboutScreenState extends State<AboutPage> {
                       ),
                     ),
                     TextSpan(
-                      text: "17 year old Web and Mobile Development Enthusiast",
+                      text: "18 year old Web and Mobile Development Enthusiast",
                       style: TextStyle(
                         fontSize: 20,
                         color: context.watch<ColorProvider>().color,
