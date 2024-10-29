@@ -100,6 +100,7 @@ class ProjectsPage extends StatelessWidget {
                 'Prisma ORM',
                 'Shadcn/UI',
                 'Azure',
+                'Cloudflare Workers AI'
               ],
             ),
             ProjectCard(
