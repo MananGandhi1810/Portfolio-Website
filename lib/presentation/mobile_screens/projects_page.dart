@@ -104,6 +104,22 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
+              projectName: 'FluxGate',
+              projectImage: 'assets/images/projects/fluxgate_website.jpg',
+              projectDescription:
+                  'Fluxgate is a self-hostable deployment platform that empowers developers to effortlessly deploy their GitHub repositories to self-hosted servers, with an option to deploy using natural language. Winner for best use of Gemini API at HackThisFall Virtual 2024',
+              projectLink: 'https://github.com/MananGandhi1810/FluxGate',
+              projectTechnologies: [
+                'Express.js',
+                'Next.js',
+                'Docker',
+                'PostgreSQL',
+                'Prisma ORM',
+                'Redis',
+                'Gemini API'
+              ],
+            ),
+            ProjectCard(
               projectName: 'BrainyBox',
               projectImage: 'assets/images/projects/brainybox_app.png',
               projectDescription:
