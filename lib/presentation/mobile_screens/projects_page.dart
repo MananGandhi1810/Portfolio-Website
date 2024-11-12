@@ -42,6 +42,7 @@ class ProjectsPage extends StatelessWidget {
                 'Flask',
                 'MongoDB',
                 'AWS',
+                'Google Play Store',
               ],
             ),
             ProjectCard(
