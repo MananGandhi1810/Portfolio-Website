@@ -75,6 +75,10 @@ class _SkillsPageState extends State<SkillsPage> {
       "icon": SimpleIcons.react,
     },
     {
+      "skillName": "React Router",
+      "icon": SimpleIcons.reactrouter,
+    },
+    {
       "skillName": "React Native",
       "icon": SimpleIcons.react,
     },
@@ -117,6 +121,10 @@ class _SkillsPageState extends State<SkillsPage> {
     {
       "skillName": "Prisma ORM",
       "icon": SimpleIcons.prisma,
+    },
+    {
+      "skillName": "Shadcn/UI",
+      "icon": SimpleIcons.shadcnui,
     },
   ];
 
