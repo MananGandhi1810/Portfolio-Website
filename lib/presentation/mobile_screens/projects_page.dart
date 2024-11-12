@@ -162,7 +162,7 @@ class ProjectsPage extends StatelessWidget {
               projectImage: 'assets/images/projects/docker_sensei_app.jpeg',
               projectDescription:
                   'A docker container management system, which helps in managing and monitoring the docker containers running on multiple server. Built during HackNiche, a 24 hour hackathon held at DJSCE.',
-              projectLink: 'https://github.com/MananGandhi1810/hackniche-2024',
+              projectLink: 'https://github.com/rushabhhere/hackniche',
               projectTechnologies: [
                 'Node.js',
                 'Flutter',
