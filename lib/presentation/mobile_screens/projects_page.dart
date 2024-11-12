@@ -117,7 +117,8 @@ class ProjectsPage extends StatelessWidget {
                 'PostgreSQL',
                 'Prisma ORM',
                 'Redis',
-                'Gemini API'
+                'Gemini 1.5 Flash',
+                'Shadcn/UI',
               ],
             ),
             ProjectCard(
