@@ -122,6 +122,24 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
+              projectName: 'Automated Interview Platform',
+              projectImage: 'assets/images/projects/aip_website.jpg',
+              projectDescription:
+                  'An interview simulation platform, which can give users feedback and points to improve for a real interview. Built for Smart India Hackathon 2024',
+              projectLink:
+                  'https://github.com/MananGandhi1810/Vichaar-Manthan-SIH-2024',
+              projectTechnologies: [
+                'Express.js',
+                'Next.js',
+                'MongoDB',
+                'Gemini 1.5 Flash',
+                'Python',
+                'Apache Kafka',
+                'Redis',
+                'Docker',
+              ],
+            ),
+            ProjectCard(
               projectName: 'BrainyBox',
               projectImage: 'assets/images/projects/brainybox_app.png',
               projectDescription:
