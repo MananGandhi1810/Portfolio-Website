@@ -74,7 +74,7 @@ class ProjectsPage extends StatelessWidget {
               projectImage: 'assets/images/projects/leetcode_clone_website.png',
               projectDescription:
                   'A platform to practice logic based programming questions. Currently supprts 4 languages - Python, Java, C and C++.',
-              projectLink: 'https://code.manangandhi.tech/',
+              projectLink: 'https://code.mpst.me/',
               projectTechnologies: [
                 'Express.js',
                 'React.js',
