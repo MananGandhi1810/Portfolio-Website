@@ -33,7 +33,7 @@ jobs:
         run: flutter build web --release --web-renderer canvaskit
      
       - name: Upload Web Build Files
-        uses: actions/upload-artifact@latest
+        uses: actions/upload-artifact@v4
         with:
           name: web-release
           path: ./build/web
@@ -45,12 +45,12 @@ jobs:
 
     steps:
     - name: Download Web Release
-      uses: actions/download-artifact@latest
+      uses: actions/download-artifact@v4
       with:
         name: web-release
 
     - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@latest
+      uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./
