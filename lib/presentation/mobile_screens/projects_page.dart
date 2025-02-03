@@ -58,18 +58,6 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
-              projectName: 'Save Birds',
-              projectImage: 'assets/images/projects/save_birds_app.png',
-              projectDescription:
-                  'A suite of apps for the Save Birds NGO which rescues and treats injured birds.',
-              projectLink:
-                  'https://play.google.com/store/search?q=pub%3ASave%20Birds&c=apps',
-              projectTechnologies: [
-                'Flutter',
-                'Firebase',
-              ],
-            ),
-            ProjectCard(
               projectName: 'LeetCode Clone',
               projectImage: 'assets/images/projects/leetcode_clone_website.png',
               projectDescription:
@@ -134,6 +122,48 @@ class ProjectsPage extends StatelessWidget {
                 'Docker',
                 'Firebase',
                 'Google Maps API',
+              ],
+            ),
+            ProjectCard(
+              projectName: 'YetiCode',
+              projectImage: 'assets/images/projects/yeticode_website.jpeg',
+              projectDescription:
+                  'YetiCode is a web application designed to significantly reduce development time and the number of bugs in your projects. Winner at Datathon 3.0 by Analytika MPSTME.',
+              projectLink:
+                  'https://github.com/MananGandhi1810/datathon-round-2',
+              projectTechnologies: [
+                'Next.js',
+                'TailwindCSS',
+                'Express.js',
+                'Flask',
+                'GitHub API',
+                'Gemini 2.0 Flash',
+                'PostgreSQL',
+                'Prisma ORM',
+                'Resend API',
+                'Docker',
+              ],
+            ),
+            ProjectCard(
+              projectName: 'AdGen',
+              projectImage: 'assets/images/projects/adgen_website.jpeg',
+              projectDescription:
+                  'Adgen is your all-in-one platform to gather competitive intelligence, analyze market positioning, and track social sentiment across multiple channels—all in one place. Built at Level Supermind Hackathon.',
+              projectLink:
+                  'https://github.com/MananGandhi1810/level-supermind-hackathon-2025',
+              projectTechnologies: [
+                'Next.js',
+                'FastAPI',
+                'LangChain',
+                'AstraDB',
+                'FireCrawl',
+                'SerpAPI',
+                'YouTube Comments API',
+                'YT-dlp',
+                'Auth0',
+                'Gemini 2.0 Flash',
+                'Reddit API',
+                'Docker',
               ],
             ),
             ProjectCard(
