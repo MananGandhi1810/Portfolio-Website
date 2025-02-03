@@ -62,7 +62,7 @@ class ProjectsPage extends StatelessWidget {
               projectImage: 'assets/images/projects/leetcode_clone_website.png',
               projectDescription:
                   'A platform to practice logic based programming questions. Currently supprts 4 languages - Python, Java, C and C++.',
-              projectLink: 'https://code.manangandhi.tech/',
+              projectLink: 'https://code.mpst.me/',
               projectTechnologies: [
                 'Express.js',
                 'React.js',
@@ -107,6 +107,24 @@ class ProjectsPage extends StatelessWidget {
                 'Redis',
                 'Gemini 1.5 Flash',
                 'Shadcn/UI',
+              ],
+            ),
+            ProjectCard(
+              projectName: 'Automated Interview Platform',
+              projectImage: 'assets/images/projects/aip_website.jpg',
+              projectDescription:
+                  'An interview simulation platform, which can give users feedback and points to improve for a real interview. Built for Smart India Hackathon 2024',
+              projectLink:
+                  'https://github.com/MananGandhi1810/Vichaar-Manthan-SIH-2024',
+              projectTechnologies: [
+                'Express.js',
+                'Next.js',
+                'MongoDB',
+                'Gemini 1.5 Flash',
+                'Python',
+                'Apache Kafka',
+                'Redis',
+                'Docker',
               ],
             ),
             ProjectCard(
