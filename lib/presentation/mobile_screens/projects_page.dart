@@ -143,6 +143,22 @@ class ProjectsPage extends StatelessWidget {
               ],
             ),
             ProjectCard(
+              projectName: 'DreamScale',
+              projectImage: 'assets/images/projects/dreamscale_website.png',
+              projectDescription:
+                  'Dream Scale is an AI-powered personal startup advisor that guides solo founders through every stage of their journey. Developed at Cyber Cypher 4.0 Round 1',
+              projectLink: 'https://github.com/MananGandhi1810/cc-4.0-round-1',
+              projectTechnologies: [
+                'Flask',
+                'React.js',
+                'Gemini 2.0 Flash',
+                'Docker',
+                'Shadcn/UI',
+                'TLDraw',
+                'SerpAPI',
+              ],
+            ),
+            ProjectCard(
               projectName: 'YetiCode',
               projectImage: 'assets/images/projects/yeticode_website.jpeg',
               projectDescription:
