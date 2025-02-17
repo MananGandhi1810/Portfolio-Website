@@ -94,12 +94,35 @@ class _AboutScreenState extends State<AboutPage> {
                     ),
                     TextSpan(
                       text:
-                          ' at Mukesh Patel School of Technology Management and Engineering, Mumbai.',
+                          ' at Mukesh Patel School of Technology Management and Engineering, Mumbai. I have participated in ',
                       style: TextStyle(
                         fontSize: 20,
                         color: Theme.of(context).brightness == Brightness.dark
                             ? Colors.white
                             : Colors.black,
+                      ),
+                    ),
+                    TextSpan(
+                      text: '15+ hackathons',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: context.watch<ColorProvider>().color,
+                      ),
+                    ),
+                    TextSpan(
+                      text: ' and have ',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Theme.of(context).brightness == Brightness.dark
+                            ? Colors.white
+                            : Colors.black,
+                      ),
+                    ),
+                    TextSpan(
+                      text: 'won 3 hackathons',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: context.watch<ColorProvider>().color,
                       ),
                     ),
                   ],
