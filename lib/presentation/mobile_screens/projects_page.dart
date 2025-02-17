@@ -156,6 +156,7 @@ class ProjectsPage extends StatelessWidget {
                 'Shadcn/UI',
                 'TLDraw',
                 'SerpAPI',
+                'MongoDB',
               ],
             ),
             ProjectCard(

@@ -52,7 +52,7 @@ class _AboutMeState extends State<AboutMe> {
               highlightColor: context.watch<ColorProvider>().color,
               period: const Duration(milliseconds: 2500),
               child: Text(
-                "I am Manan Gandhi, a Computer Engineering Student who loves to code and build software.",
+                "I am Manan Gandhi, a Computer Engineering Student who loves to code and build software. I have participated in 15+ hackathons and won 3 hackathons (2 - runner up, 1 - winner)",
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
