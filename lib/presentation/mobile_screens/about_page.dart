@@ -103,7 +103,7 @@ class _AboutScreenState extends State<AboutPage> {
                       ),
                     ),
                     TextSpan(
-                      text: '15+ hackathons',
+                      text: '16 hackathons',
                       style: TextStyle(
                         fontSize: 20,
                         color: context.watch<ColorProvider>().color,

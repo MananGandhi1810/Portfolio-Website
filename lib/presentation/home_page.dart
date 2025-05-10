@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:starsview/config/StarsConfig.dart';
 import 'package:starsview/starsview.dart';
+import 'package:toastification/toastification.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../providers/color_provider.dart';
 import 'components/about_me.dart';
@@ -25,6 +27,58 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
+    Future.delayed(const Duration(milliseconds: 500), () {
+      try {
+        toastification.showCustom(
+          context: context, // optional if you use ToastificationWrapper
+          autoCloseDuration: const Duration(seconds: 5),
+          alignment: Alignment.topCenter,
+          builder: (BuildContext context, ToastificationItem holder) {
+            return Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Colors.blue,
+              ),
+              padding: const EdgeInsets.all(16),
+              margin: const EdgeInsets.all(8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Check this out',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'I recently published a blog about my project DockerSensei. Check it out and leave your feedback.',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          launchUrl(
+                            Uri.parse(
+                                "https://dev.to/manangandhi1810/dockersensei-master-your-containers-mn9"),
+                          );
+                        },
+                        child: const Text('Learn More'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          },
+        );
+      } catch (e) {
+        debugPrint(e.toString());
+      }
+    });
   }
 
   @override
