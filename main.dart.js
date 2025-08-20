@@ -83155,7 +83155,7 @@ H(a){var s,r,q=null,p=t.w,o=!this.a.c?A.b7(a,q,p).w.a.a*0.2:A.b7(a,q,p).w.a.a*0.
 p=!this.a.c?A.b7(a,q,p).w.a.a*0.2:A.b7(a,q,p).w.a.a*0.5
 s=A.Y(a).ax.a===B.D?B.i:B.k
 r=A.bg(a,!0,t.m).a
-return new A.ba(B.P,new A.ek(new A.af(p,o,n,1/0),A.hF(A.b([B.Uy,new A.Bf(A.df("I am Manan Gandhi, a Computer Engineering Student who loves to code and build software. I have participated in 15+ hackathons and won 3 hackathons",q,q,q,A.ch(q,q,A.Y(a).ax.a===B.D?B.i:B.k,q,q,q,q,q,q,q,q,20,q,q,B.aE,q,q,!0,q,q,q,q,q,q,q,q),B.eF,q),B.DH,new A.kT(B.b9,B.eR,B.bX,A.b([s,s,r,s,s],t.t_),B.GB,q),q)],t.p),B.ae,B.eo,B.fV),q),q)}}
+return new A.ba(B.P,new A.ek(new A.af(p,o,n,1/0),A.hF(A.b([B.Uy,new A.Bf(A.df("I am Manan Gandhi, a Computer Engineering Student who loves to code and build software. I have participated in 15+ hackathons and won 4 hackathons",q,q,q,A.ch(q,q,A.Y(a).ax.a===B.D?B.i:B.k,q,q,q,q,q,q,q,q,20,q,q,B.aE,q,q,!0,q,q,q,q,q,q,q,q),B.eF,q),B.DH,new A.kT(B.b9,B.eR,B.bX,A.b([s,s,r,s,s],t.t_),B.GB,q),q)],t.p),B.ae,B.eo,B.fV),q),q)}}
 A.ok.prototype={
 H(a){var s=null,r=$.a7().RO(10,10,B.bX)
 return A.awV(A.eF(s,this.c,B.r,s,s,new A.cR(A.X(B.c.al(25.5),255,255,255),s,s,A.fZ(20),s,s,B.az),s,s,s,s,s,s,s),r)}}
