@@ -83307,7 +83307,7 @@ H(a){var s,r,q,p,o,n,m=null,l=t.m,k=A.bg(a,!0,l).a.eN()>0.5?B.k:B.i,j=A.df("Abou
 j=A.Hs(A.bg(a,!0,l).a,!0,new A.cz(m,m,m,m,m,k,m,m,m),j)
 k=A.df("Manan Gandhi",m,m,m,A.ch(m,m,A.Y(a).ax.a===B.D?B.i:B.k,m,m,m,m,m,m,m,m,30,m,m,B.aE,m,m,!0,m,m,m,m,m,m,m,m),m,m)
 s=A.bK(m,A.ch(m,m,A.Y(a).ax.a===B.D?B.i:B.k,m,m,m,m,m,m,m,m,20,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),"I am a ")
-r=A.bK(m,A.ch(m,m,A.bg(a,!0,l).a,m,m,m,m,m,m,m,m,20,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),"18 year old Web and Mobile Development Enthusiast")
+r=A.bK(m,A.ch(m,m,A.bg(a,!0,l).a,m,m,m,m,m,m,m,m,20,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),"19 year old Web and Mobile Development Enthusiast")
 q=A.bK(m,A.ch(m,m,A.Y(a).ax.a===B.D?B.i:B.k,m,m,m,m,m,m,m,m,20,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),", pursuing ")
 p=A.bK(m,A.ch(m,m,A.bg(a,!0,l).a,m,m,m,m,m,m,m,m,20,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),"B.Tech in Computer Engineering")
 o=A.bK(m,A.ch(m,m,A.Y(a).ax.a===B.D?B.i:B.k,m,m,m,m,m,m,m,m,20,m,m,m,m,m,!0,m,m,m,m,m,m,m,m)," at Mukesh Patel School of Technology Management and Engineering, Mumbai. I have participated in ")
